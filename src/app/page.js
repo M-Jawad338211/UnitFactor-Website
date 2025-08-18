@@ -9,6 +9,7 @@ export default function Home() {
       <Solutions />
       <Experiences />
       <Animations />
+      <Partnerships />
     </div>
   );
 }
@@ -40,7 +41,7 @@ function Hiring() {
               Crafting Unique, Purpose-Driven Designs That Capture Attention,
               Build Trust, and Turn Visitors into Loyal Customers
             </p>
-            <button className="bg-[#D9D9D9] text-[#0A3253] text-[40px] font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
+            <button className="bg-[#D9D9D9] text-[#0A3253] text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
               Hire Us
             </button>
             <p className="text-[20px] font-bold text-white max-w-xs ml-auto mt-4 ">
@@ -680,6 +681,16 @@ function Animations() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+function Partnerships() {
+  return (
+    <div className="flex flex-col p-28 w-full h-full bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover">
+      <p className="text-5xl font-bold text-white max-w-3xl leading-[150%] tracking-[0]">
+        Long-term partnerships is what we are always striving 
+        <span className="text-black">to build</span>
+      </p>
     </div>
   );
 }
