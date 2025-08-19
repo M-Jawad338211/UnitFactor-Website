@@ -159,7 +159,7 @@ export default function Header() {
           </button>
           <Link
             href="/contact"
-            className="bg-white text-[#0A3253] font-bold px-4 py-2 rounded-[40px]"
+            className="bg-white hover:bg-[#983232]  text-[#0A3253] hover:text-white font-bold px-4 py-2 rounded-[40px]"
           >
             Contact Us
           </Link>
