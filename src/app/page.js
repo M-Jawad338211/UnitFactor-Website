@@ -13,6 +13,7 @@ export default function Home() {
       <Animations />
       <CardCarousel />
       <Services />
+      <Faqs />
     </div>
   );
 }
@@ -844,7 +845,56 @@ professionally and on time`,
 }
 
 function Services() {
-  const technologies = [
+  const [activeCategory, setActiveCategory] = useState("Strategy");
+
+  const strategyServices = [
+    {
+      stack: "Market Research",
+      technology: "Competitor Analysis, SWOT, Surveys",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+    {
+      stack: "Business Strategy",
+      technology: "Roadmapping, OKRs, Business Models",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+    {
+      stack: "Product Strategy",
+      technology: "MVP Planning, User Journey Mapping",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+  ];
+
+  const designServices = [
+    {
+      stack: "UI/UX Design",
+      technology: "Wireframes, Prototypes, User Flows",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+    {
+      stack: "Brand Identity",
+      technology: "Logos, Color Palettes, Typography",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+    {
+      stack: "Visual Design",
+      technology: "Mockups, Design Systems, Style Guides",
+      icon: (
+        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+      ),
+    },
+  ];
+  const development = [
     {
       stack: "Web Development",
       technology: "React JS, Next JS, Node JS, Express JS",
@@ -875,6 +925,16 @@ function Services() {
       ),
     },
   ];
+  let activeServices = [];
+  if (activeCategory === "Strategy") {
+    activeServices = strategyServices;
+  }
+  if (activeCategory === "Design") {
+    activeServices = designServices;
+  }
+  if (activeCategory === "Web Development") {
+    activeServices = development;
+  }
 
   return (
     <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover">
@@ -887,26 +947,133 @@ function Services() {
         </p>
       </div>
       <div className="flex  justify-center gap-4 mt-10">
-        <button className="text-white text-2xl font-bold rounded-2xl items-center px-10 py-4 bg-[url('/services-bg.png')] bg-cover bg-center cursor-pointer">
+        <button
+          onClick={() => setActiveCategory("Strategy")}
+          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
+            activeCategory === "Strategy"
+              ? "bg-white text-[#983232]"
+              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
+          }`}
+        >
           Strategy
         </button>
-        <button className="text-white text-2xl font-bold rounded-2xl px-10 py-4 bg-[url('/services.png')] bg-cover bg-center cursor-pointer">
+        <button
+          onClick={() => setActiveCategory("Design")}
+          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
+            activeCategory === "Design"
+              ? "bg-white text-[#983232]"
+              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
+          }`}
+        >
           Design
         </button>
-        <button className="text-white text-2xl font-bold rounded-2xl px-10 py-4 bg-[url('/services-bg.png')] bg-cover bg-center cursor-pointer">
+        <button
+          onClick={() => setActiveCategory("Web Development")}
+          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
+            activeCategory === "Web Development"
+              ? "bg-white text-[#983232]"
+              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
+          }`}
+        >
           Web Development
         </button>
       </div>
       <div className="flex flex-col  mt-10 bg-[#D9D9D9] rounded-[30px] p-10">
-        {technologies.map((service, index) => (
+        {activeServices.map((service, index) => (
           <div key={index} className="flex  justify-between mb-6">
             <span className="text-4xl font-medium leading-[150%] tracking-[0]">
               {service.stack}
             </span>
-            <span className="text-4xl text-[#7E7E7E] font-medium leading-[150%] tracking-[0]">
+            <h4 className="text-4xl text-[#7E7E7E] font-medium leading-[150%] tracking-[0]">
               {service.technology}
-            </span>
+            </h4>
             <span>{service.icon}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Faqs() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = (index) => {
+    setIsOpen(isOpen === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is UnitFator?",
+      answer:
+        "UnitFator is a SaaS platform designed to help you manage, track, and optimize your financial workflows efficiently.",
+    },
+    {
+      question: "How secure is my data with UnitFator?",
+      answer:
+        "We use industry-standard encryption and follow best practices to ensure your data is secure and accessible only to you.",
+    },
+    {
+      question: "Can I use UnitFator on mobile devices?",
+      answer:
+        "Yes, UnitFator is fully responsive and can be accessed seamlessly across desktops, tablets, and mobile devices.",
+    },
+    {
+      question: "Does UnitFator support integrations?",
+      answer:
+        "Yes, UnitFator supports integrations with popular tools like Slack, Google Workspace, and accounting software.",
+    },
+    {
+      question: "Can multiple team members use UnitFator?",
+      answer:
+        "Absolutely! UnitFator is built for collaboration. You can invite team members, assign roles, and set permissions.",
+    },
+    {
+      question: "Is there a free trial available?",
+      answer:
+        "Yes, we offer a 14-day free trial so you can explore UnitFator before committing to a paid plan.",
+    },
+    {
+      question: "How can I contact support?",
+      answer:
+        "You can reach out to our support team 24/7 via live chat or email at support@unitfator.com.",
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer:
+        "We accept all major credit cards, PayPal, and bank transfers for annual subscriptions.",
+    },
+  ];
+
+  return (
+    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover">
+      <h2 className="text-4xl font-bold text-white mb-8">
+        Frequently Asked Questions
+      </h2>
+      <div className="max-w-3xl mx-auto text-left">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  cursor-pointer bg-[#000000]   "
+          >
+            <div
+              className="flex gap-4 items-center "
+              onClick={() => toggleOpen(index)}
+            >
+              <img
+                src="./angle.png"
+                className={`w-[24px] h-[20px]  transform transition-transform duration-300 ease-in-out ${
+                  isOpen === index ? "rotate-90" : "rotate-0"
+                }`}
+              />
+
+              <p className=" text-[32px] font-medium leading-[150%] tracking-[0] ">
+                {faq.question}
+              </p>
+            </div>
+
+            {isOpen === index && (
+              <p className="text-lg text-white  mt-4 pl-9">{faq.answer}</p>
+            )}
           </div>
         ))}
       </div>
