@@ -2,10 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import Header from "./header/page";
 import "./app.css";
 import "./globals.css";
-import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -25,10 +23,9 @@ export default function Home() {
 function Hiring() {
   return (
     <div
-      className="w-full h-full bg-cover bg-center"
+      className="w-full h-full bg-cover bg-center pt-30"
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      <Header />
       <div>
         <div className="flex flex-col items-center justify-center h-full mt-20">
           <div className="flex items-center gap-3">
@@ -50,9 +47,11 @@ function Hiring() {
               Crafting Unique, Purpose-Driven Designs That Capture Attention,
               Build Trust, and Turn Visitors into Loyal Customers
             </p>
-            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
-              Hire Us
-            </button>
+            <a href="#" target="_blank">
+              <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
+                Hire Us
+              </button>
+            </a>
             <p className="text-[20px] font-bold text-white max-w-xs ml-auto mt-4 ">
               Subscribe to our services on a monthly basis and get an
               experienced product designer that will integrate in your team like
@@ -1115,6 +1114,7 @@ function Projects() {
                 <li key={idx} className="flex items-start gap-3">
                   <Image
                     src={"/check.png"}
+                    alt="Check Icon"
                     width={15}
                     height={10}
                     className="mt-1"
@@ -1137,7 +1137,7 @@ function Projects() {
               xmlns="http://www.w3.org/2000/svg"
               className="text-[#0A3253] ml-4 group-hover:text-white "
             >
-              <g clip-path="url(#clip0_1168_69)">
+              <g clipPath="url(#clip0_1168_69)">
                 <path
                   d="M0 11.3547C0.362413 12.4199 1.12684 12.7873 2.24048 12.7861C14.5613 12.7671 26.8821 12.7742 39.203 12.7742C39.377 12.7742 39.551 12.7742 39.8222 12.7742C39.6266 12.9757 39.5006 13.1119 39.3686 13.2423C37.4389 15.1406 35.508 17.0401 33.576 18.9372C33.0611 19.4432 32.8967 20.0535 33.0911 20.7277C33.282 21.3889 33.7536 21.8108 34.4388 21.9577C35.1084 22.1011 35.6712 21.8807 36.1513 21.4091C37.9009 19.6873 39.6542 17.9691 41.4062 16.2497C42.7119 14.9676 44.0175 13.6855 45.3208 12.401C46.2256 11.5087 46.2292 10.4956 45.322 9.60328C42.2787 6.60888 39.2318 3.61685 36.1837 0.627192C35.3712 -0.169102 34.2864 -0.207022 33.5472 0.520544C32.7971 1.25878 32.8463 2.34183 33.6732 3.1559C35.5812 5.03525 37.4905 6.91223 39.4022 8.78802C39.5186 8.90178 39.653 8.99895 39.779 9.10322C39.767 9.1447 39.755 9.18499 39.743 9.22646C39.5786 9.22646 39.4142 9.22646 39.251 9.22646C26.9157 9.22646 14.5793 9.23357 2.24408 9.21461C1.12804 9.21224 0.363613 9.58076 0 10.6449C0 10.8819 0 11.1177 0 11.3547Z"
                   fill="currentColor"
