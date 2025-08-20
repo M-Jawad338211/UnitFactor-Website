@@ -1,10 +1,54 @@
 import Link from "next/link";
 export default function Footer() {
+  const strategyServices = [
+    "Product Discovery",
+    "Proof of Concept",
+    "UX Audit",
+    "Market Research",
+    "Business Analysis",
+    "Go-to-Market Strategy",
+    "Technology Consulting",
+    "Competitor Analysis",
+    "Customer Journey Mapping",
+    "Digital Transformation Strategy",
+    "Product Roadmapping",
+    "Innovation Workshops",
+  ];
+
+  const developmentServices = [
+    "Web Development",
+    "Mobile App Development",
+    "API Development",
+    "Custom Software Solutions",
+    "E-commerce Development",
+    "Performance Optimization",
+    "Maintenance & Support",
+    "Backend Development",
+    "Frontend Development",
+    "DevOps & Cloud Services",
+    "Database Design & Management",
+    "AI & Machine Learning Solutions",
+  ];
+
+  const designingServices = [
+    "UI Concept",
+    "Branding Services",
+    "Wireframing & Prototyping",
+    "User Interface Design",
+    "User Experience Design",
+    "Graphic Design",
+    "Design System Creation",
+    "Logo Design",
+    "Pitch Deck Design",
+    "Mobile App Design",
+    "Website Redesign",
+    "Motion Graphics & Animation",
+  ];
   return (
     <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex justify-between">
         <div className="flex flex-col items-start gap-20">
-          <Link href="/" className="">
+          <Link href="/">
             <svg
               width="320"
               height="81"
@@ -140,6 +184,55 @@ export default function Footer() {
           <div className="text-left text-[#E8E8E8]">
             <h3 className="text-2xl font-bold">Drop us a line</h3>
             <p className="text-2xl font-medium mt-2">@unitfactor.org</p>
+          </div>
+        </div>
+
+        <div className="mt-6 ">
+          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+            Strategy Services
+          </h3>
+          <div className="mt-5">
+            {strategyServices.map((service, index) => {
+              return (
+                <div className="mt-2" key={index}>
+                  <p className="text-[#E8E8E8] text-[16px] font-medium">
+                    {service}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="mt-6">
+          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+            Development Services
+          </h3>
+          <div className="mt-5">
+            {developmentServices.map((service, index) => {
+              return (
+                <div className="mt-2" key={index}>
+                  <p className="text-[#E8E8E8] text-[16px] font-medium">
+                    {service}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="mt-6">
+          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+            Designing Services
+          </h3>
+          <div className="mt-5">
+            {designingServices.map((service, index) => {
+              return (
+                <div className="mt-2" key={index}>
+                  <p className="text-[#E8E8E8] text-[16px] font-medium">
+                    {service}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
