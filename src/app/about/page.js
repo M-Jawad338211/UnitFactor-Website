@@ -153,7 +153,7 @@ function Members() {
   return (
     <div className="p-24 w-full h-full items-center justify-center text-center bg-black">
       <div className="flex flex-col max-w-7xl gap-2 p-10 mx-auto bg-[url('/members-bg.png')] bg-cover bg-center bg-no-repeat  justify-center rounded-[30px]  items-stretch mt-10">
-        <div className="flex gap-3 justify-center mt-10">
+        <div className="flex gap-2 justify-center mt-10">
           <div>
             <Image
               src={"/team-member.png"}
