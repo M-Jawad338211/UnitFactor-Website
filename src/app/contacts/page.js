@@ -115,7 +115,7 @@ function Contacts() {
           </div>
         </div>
 
-        <div className="bg-[url('/form.png')] rounded-2xl shadow-lg p-8 w-full md:w-1/2">
+        <div className="bg-[url('/form.png')] bg-cover bg-no-repeat bg-center rounded-2xl shadow-lg p-8 w-full md:w-1/2">
           <h2 className="text-[40px] text-left font-bold mb-6">
             Tell us about your project
           </h2>
@@ -138,18 +138,16 @@ function Contacts() {
               className="w-full border-b-2 border-[#E8E8E8] outline-none p-2"
             />
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 mt-6">
               <button
                 type="submit"
-                className="flex items-center gap-2 bg-[#B83232] hover:bg-[#8B2424] text-white px-6 py-3 rounded-xl font-bold"
+                className="flex items-center  bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-2xl  text-[40px] font-bold"
               >
-                ➡ Hire Us
+                Hire Us
               </button>
             </div>
-
-            {/* Privacy Policy */}
-            <p className="text-xs text-gray-500 mt-4">
-              By submitting this form you agree to our Privacy Policy
+            <p className="text-xs font-bold text-white pr-5 text-right  mt-4">
+              By submitting this form you<br></br> agree to our Privacy Policy
             </p>
           </form>
         </div>
