@@ -146,10 +146,10 @@ export default function Header() {
           <Link href="/blog" className="text-white font-bold">
             Blog
           </Link>
-          <Link href="/blog" className="text-white font-bold">
+          <Link href="/portfolio" className="text-white font-bold">
             Portfolio
           </Link>
-          <Link href="/blog" className="text-white font-bold">
+          <Link href="/contacts" className="text-white font-bold">
             Contacts
           </Link>
         </nav>
