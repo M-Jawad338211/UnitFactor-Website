@@ -181,7 +181,7 @@ function ServicesAccordion() {
                       alt={work.title}
                       width={450}
                       height={450}
-                      className="rounded-2xl"
+                      className="rounded-xl"
                     />
                   </div>
 
