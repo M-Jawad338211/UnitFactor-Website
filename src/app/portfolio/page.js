@@ -9,6 +9,7 @@ export default function Portfolio() {
       <Partners />
       <ServicesAccordion />
       <Testimonials />
+      <Booking />
     </div>
   );
 }
@@ -220,14 +221,14 @@ const cards = [
     id: 1,
     name: "Ola Matafor",
     role: "Vice President at WordPress",
-    text: "Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever the next request was. Terrific job and we couldn’t have done it without you.",
+    text: `"Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever the next request was. Terrific job and we couldn’t have done it without you."`,
     image: "/team-member.png",
   },
   {
     id: 2,
     name: "John Doe",
     role: "CEO at Voxe",
-    text: "Amazing collaboration! The team is skilled and professional. Terrific job and we couldn’t have done it without you.",
+    text: `"Amazing collaboration! The team is skilled and professional. Terrific job and we couldn’t have done it without you."`,
     image: "/team-member.png",
   },
 ];
@@ -290,7 +291,9 @@ function Testimonials() {
                     {card.name}
                   </h3>
                   <p className="text-sm text-gray-600">{card.role}</p>
-                  <p className="text-gray-800 mt-3">{card.text}</p>
+                  <p className="text-black text-[32px] leading-[129%] tracking-[0] font-medium mt-3">
+                    {card.text}
+                  </p>
 
                   <div className="flex justify-end gap-3 mt-6">
                     <button
@@ -313,5 +316,30 @@ function Testimonials() {
         </div>
       </div>
     </section>
+  );
+}
+
+function Booking() {
+  return (
+    <div className="p-24 w-full h-full items-center justify-center text-center bg-black">
+      <div className="max-w-7xl p-10 mx-auto bg-[#C8C8C8] bg-cover bg-center bg-no-repeat rounded-[30px]  mt-10">
+        <div className="w-full h-auto  p-8  space-y-2 flex flex-col justify-between">
+          <div className="space-y-2 flex flex-col items-center">
+            <h3 className="text-[64px] text-center   font-bold leading-[150%] tracking-[0]">
+              Wondering if we`re your
+              <br></br> UI/UX design match?
+            </h3>
+            <p className="font-normal text-[32px] leading-[150%] tracking-[0] max-w-2xl">
+              We offer you a free 3-day trial work with one of our experienced
+              designers to cover your questions about our working process.
+            </p>
+
+            <button className=" bg-[#983232] hover:bg-[#0A3253]  text-white  text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
+              Book a free trial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
