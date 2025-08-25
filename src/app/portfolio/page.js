@@ -2,11 +2,13 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 export default function Portfolio() {
   return (
     <div>
       <Partners />
       <ServicesAccordion />
+      <Testimonials />
     </div>
   );
 }
@@ -210,5 +212,106 @@ function ServicesAccordion() {
         </section>
       </div>
     </div>
+  );
+}
+
+const cards = [
+  {
+    id: 1,
+    name: "Ola Matafor",
+    role: "Vice President at WordPress",
+    text: "Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever the next request was. Terrific job and we couldn’t have done it without you.",
+    image: "/team-member.png",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    role: "CEO at Voxe",
+    text: "Amazing collaboration! The team is skilled and professional. Terrific job and we couldn’t have done it without you.",
+    image: "/team-member.png",
+  },
+];
+function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const visibleCards = cards.slice(currentIndex, currentIndex + 1);
+
+  const nextSlide = () => {
+    if (currentIndex < cards.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(0);
+    }
+  };
+
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    } else {
+      setCurrentIndex(cards.length - 1);
+    }
+  };
+
+  return (
+    <section className="w-full bg-[url('/checks-bg.png')] bg-cover bg-no-repeat bg-center py-12 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-col  justify-between gap-8">
+        <h2 className="text-white text-5xl max-w-2xl font-bold">
+          Our Partners find numerous reasons to Love Us
+        </h2>
+        <div className="flex justify-between gap-5">
+          <div className="flex flex-col gap-4 w-full md:w-1/3">
+            <div className="bg-black/50 p-4 rounded-lg text-center text-white text-3xl font-bold">
+              WordPress.com
+            </div>
+            <div className="bg-black/50 p-4 rounded-lg text-center text-white text-3xl font-bold">
+              VOXE
+            </div>
+            <div className="bg-black/50 p-4 rounded-lg text-center text-white text-3xl font-bold">
+              MYSO Finance
+            </div>
+          </div>
+
+          <div className="bg-[#FFC192] rounded-2xl p-6 shadow-lg w-full md:w-2/3">
+            {visibleCards.map((card) => (
+              <div
+                key={card.id}
+                className="flex flex-col md:flex-row gap-6 items-start"
+              >
+                <Image
+                  src={card.image}
+                  alt={card.name}
+                  width={120}
+                  height={120}
+                  className="rounded-xl object-cover"
+                />
+
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900">
+                    {card.name}
+                  </h3>
+                  <p className="text-sm text-gray-600">{card.role}</p>
+                  <p className="text-gray-800 mt-3">{card.text}</p>
+
+                  <div className="flex justify-end gap-3 mt-6">
+                    <button
+                      onClick={prevSlide}
+                      className="p-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+                    >
+                      <ArrowLeft size={20} />
+                    </button>
+                    <button
+                      onClick={nextSlide}
+                      className="p-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+                    >
+                      <ArrowRight size={20} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
