@@ -10,9 +10,8 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hiring />
       <Solutions />
-
       <Experiences />
-      <Animations />
+      <Animation />
       <CardCarousel />
       <Services />
       <Faqs />
@@ -531,173 +530,54 @@ function Experiences() {
   );
 }
 
-function Animations() {
+function Animation() {
   return (
-    <div className="flex flex-col p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <p className="text-5xl font-normal leading-[150%] tracking-[0] text-white max-w-xl">
-        Turning projects into trusting partnerships
+    <div className="flex flex-col w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-24">
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-snug sm:leading-[150%] tracking-normal text-white max-w-sm md:max-w-lg ">
+        Turning projects into trusting partnerships
       </p>
-      <div className="scroll-container">
-        <div className="scroll-track track-1">
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
 
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
+      <div className="scroll-container mt-8 sm:mt-12 w-full overflow-hidden">
+        <div className="scroll-track track-1">
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="scroll-item">
+              <span>
+                <img
+                  src="Frame.png"
+                  className="w-24 sm:w-32 md:w-40 lg:w-48 object-contain"
+                  alt="logo"
+                />
+              </span>
+            </div>
+          ))}
         </div>
 
         <div className="scroll-track track-2">
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="scroll-item">
+              <span>
+                <img
+                  src="Frame.png"
+                  className="w-24 sm:w-32 md:w-40 lg:w-48 object-contain"
+                  alt="logo"
+                />
+              </span>
+            </div>
+          ))}
         </div>
 
         <div className="scroll-track track-3">
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
-          <div className="scroll-item">
-            <span>
-              <img src="Frame.png" />
-            </span>
-          </div>
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="scroll-item">
+              <span>
+                <img
+                  src="Frame.png"
+                  className="w-24 sm:w-32 md:w-40 lg:w-48 object-contain"
+                  alt="logo"
+                />
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -732,22 +612,10 @@ professionally and on time`,
           xmlns="http://www.w3.org/2000/svg"
           className="text-white"
         >
-          <g clipPath="url(#clip0_1152_592)">
-            <path
-              d="M0 11.3547C0.362413 12.4199 1.12684 12.7873 2.24048 12.7861C14.5613 12.7671 26.8821 12.7742 39.203 12.7742C39.377 12.7742 39.551 12.7742 39.8222 12.7742C39.6266 12.9757 39.5006 13.1119 39.3686 13.2423C37.4389 15.1406 35.508 17.0401 33.576 18.9372C33.0611 19.4432 32.8967 20.0535 33.0911 20.7277C33.282 21.3889 33.7536 21.8108 34.4388 21.9577C35.1084 22.1011 35.6712 21.8807 36.1513 21.4091C37.9009 19.6873 39.6542 17.9691 41.4062 16.2497C42.7119 14.9676 44.0175 13.6855 45.3208 12.401C46.2256 11.5087 46.2292 10.4956 45.322 9.60328C42.2787 6.60888 39.2318 3.61685 36.1837 0.627192C35.3712 -0.169102 34.2864 -0.207022 33.5472 0.520544C32.7971 1.25878 32.8463 2.34183 33.6732 3.1559C35.5812 5.03525 37.4905 6.91223 39.4022 8.78802C39.5186 8.90178 39.653 8.99895 39.779 9.10322C39.767 9.1447 39.755 9.18499 39.743 9.22646C39.5786 9.22646 39.4142 9.22646 39.251 9.22646C26.9157 9.22646 14.5793 9.23357 2.24408 9.21461C1.12804 9.21224 0.363613 9.58076 0 10.6449C0 10.8819 0 11.1177 0 11.3547Z"
-              fill="currentColor"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_1152_592">
-              <rect
-                width="46"
-                height="22"
-                fill="currentColor"
-                transform="matrix(1 0 0 -1 0 22)"
-              />
-            </clipPath>
-          </defs>
+          <path
+            d="M0 11.3547C0.362413 12.4199 1.12684 12.7873 2.24048 12.7861C14.5613 12.7671 26.8821 12.7742 39.203 12.7742C39.377 12.7742 39.551 12.7742 39.8222 12.7742C39.6266 12.9757 39.5006 13.1119 39.3686 13.2423C37.4389 15.1406 35.508 17.0401 33.576 18.9372C33.0611 19.4432 32.8967 20.0535 33.0911 20.7277C33.282 21.3889 33.7536 21.8108 34.4388 21.9577C35.1084 22.1011 35.6712 21.8807 36.1513 21.4091C37.9009 19.6873 39.6542 17.9691 41.4062 16.2497C42.7119 14.9676 44.0175 13.6855 45.3208 12.401C46.2256 11.5087 46.2292 10.4956 45.322 9.60328C42.2787 6.60888 39.2318 3.61685 36.1837 0.627192C35.3712 -0.169102 34.2864 -0.207022 33.5472 0.520544C32.7971 1.25878 32.8463 2.34183 33.6732 3.1559C35.5812 5.03525 37.4905 6.91223 39.4022 8.78802C39.5186 8.90178 39.653 8.99895 39.779 9.10322C39.767 9.1447 39.755 9.18499 39.743 9.22646C39.5786 9.22646 39.4142 9.22646 39.251 9.22646C26.9157 9.22646 14.5793 9.23357 2.24408 9.21461C1.12804 9.21224 0.363613 9.58076 0 10.6449C0 10.8819 0 11.1177 0 11.3547Z"
+            fill="currentColor"
+          />
         </svg>
       ),
     },
@@ -763,91 +631,84 @@ professionally and on time`,
   const visibleCards = cards.slice(currentIndex, currentIndex + 2);
 
   const nextSlide = () => {
-    if (currentIndex < cards.length - 2) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setCurrentIndex(0);
-    }
+    setCurrentIndex((prev) => (prev < cards.length - 2 ? prev + 1 : 0));
   };
 
   const prevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else {
-      setCurrentIndex(cards.length - 2);
-    }
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : cards.length - 2));
   };
 
   return (
-    <div className="flex flex-col w-full mx-auto p-28 h-full bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <div className="flex justify-between items-center">
-        <p className="text-5xl font-bold text-white max-w-3xl leading-[150%]">
+    <div className="flex flex-col w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-28 py-12 sm:py-16 md:py-20 lg:py-28 bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left text-white leading-snug md:leading-[150%] max-w-full md:max-w-3xl">
           Long-term partnerships is what we are always striving{" "}
           <span className="text-black">to build</span>
         </p>
-        <div className="flex justify-end space-x-2">
+        <div className="flex space-x-2 self-end md:self-auto">
           <button
             onClick={prevSlide}
-            className="p-4 cursor-pointer rounded-full bg-[#D9D9D9] "
+            className="p-3 sm:p-4 cursor-pointer rounded-full bg-[#D9D9D9]"
           >
-            <img src="./arrow.png" style={{ width: "32px", height: "16px" }} />
+            <img src="./arrow.png" className="w-6 sm:w-8" />
           </button>
           <button
             onClick={nextSlide}
-            className="p-4 cursor-pointer  rounded-full bg-[#D9D9D9]"
+            className="p-3 sm:p-4 cursor-pointer rounded-full bg-[#D9D9D9]"
           >
-            <img
-              src="./right-arrow.png"
-              style={{ width: "32px", height: "16px" }}
-            />
+            <img src="./right-arrow.png" className="w-6 sm:w-8" />
           </button>
         </div>
       </div>
 
-      <div className="flex space-x-6 overflow-hidden mt-8">
+      <div className="flex flex-col md:flex-row md:space-x-6 overflow-hidden mt-8 gap-6 md:gap-0">
         {visibleCards.map((card) => (
           <div
             key={card.id}
-            className="group flex-shrink-0 w-full md:w-1/2 h-[500px] bg-white bg-cover bg-center rounded-lg transition-all duration-300 flex items-center justify-center"
+            className="group flex-shrink-0 w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] bg-white rounded-lg transition-all duration-300 flex items-center justify-center"
           >
             {card.type === "video" && (
-              <div className="w-full h-full">
-                <iframe
-                  className="w-full h-full rounded-lg"
-                  src={card.videoUrl}
-                  title={card.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <iframe
+                className="w-full h-full rounded-lg"
+                src={card.videoUrl}
+                title={card.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             )}
 
             {card.type === "text" && (
-              <div className="flex flex-col items-center justify-center p-6 text-center h-full w-full">
-                <div>
-                  <h3 className="text-[40px] font-bold mb-3">{card.name}</h3>
-                  <p className="text-[#5E5E5E] font-medium text-4xl mb-5">
-                    {card.designation}
-                  </p>
-                </div>
-                <p className="text-[28px] font-medium leading-[150%] max-w-lg">
+              <div className="flex flex-col items-center justify-center p-4 sm:p-6 text-center h-full w-full">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold mb-2 sm:mb-3">
+                  {card.name}
+                </h3>
+                <p className="text-[#5E5E5E] font-medium text-lg sm:text-xl md:text-2xl lg:text-4xl mb-3 sm:mb-5">
+                  {card.designation}
+                </p>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[28px] font-medium leading-snug md:leading-[150%] max-w-lg">
                   {card.description}
                 </p>
-                <button className="flex bg-[#0A3253] hover:bg-[#983232] cursor-pointer p-4 text-white rounded-full mt-4 ">
-                  <a href="#" target="_blank" className="flex items-center">
-                    <span className="text-[24px] font-bold">
+                <button className="flex bg-[#0A3253] hover:bg-[#983232] cursor-pointer px-4 py-2 sm:px-6 sm:py-3 text-white rounded-full mt-4">
+                  <a
+                    href="#"
+                    target="_blank"
+                    className="flex items-center gap-2"
+                  >
+                    <span className="text-sm sm:text-base md:text-lg lg:text-[24px] font-bold">
                       View Case Study
                     </span>
-                    <span className="ml-3">{card.icon}</span>
+                    {card.icon}
                   </a>
                 </button>
               </div>
             )}
 
             {card.type === "svg" && (
-              <div className="flex flex-col items-center justify-center p-6 h-full w-full">
-                <h3 className="text-[40px] font-bold mb-3">{card.title}</h3>
-                <p className="text-[28px] font-medium leading-[150%] max-w-lg">
+              <div className="flex flex-col items-center justify-center p-4 sm:p-6 h-full w-full text-center">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold mb-3">
+                  {card.title}
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[28px] font-medium leading-snug md:leading-[150%] max-w-lg">
                   {card.description}
                 </p>
               </div>
@@ -867,21 +728,33 @@ function Services() {
       stack: "Market Research",
       technology: "Competitor Analysis, SWOT, Surveys",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Business Strategy",
       technology: "Roadmapping, OKRs, Business Models",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Product Strategy",
       technology: "MVP Planning, User Journey Mapping",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
   ];
@@ -891,115 +764,131 @@ function Services() {
       stack: "UI/UX Design",
       technology: "Wireframes, Prototypes, User Flows",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Brand Identity",
       technology: "Logos, Color Palettes, Typography",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Visual Design",
       technology: "Mockups, Design Systems, Style Guides",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
   ];
+
   const development = [
     {
       stack: "Web Development",
       technology: "React JS, Next JS, Node JS, Express JS",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Mobile Development",
       technology: "React Native, Flutter, iOS, Android",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
-
     {
-      stack: "DevOps    ",
+      stack: "DevOps",
       technology: "CloudFormation, Terraform, Docker",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
     {
       stack: "Landing Page",
       technology: "HTML, CSS, JavaScript",
       icon: (
-        <img src="./vector.png" alt="arrow" className="w-[42px] h-[18px]" />
+        <img
+          src="./vector.png"
+          alt="arrow"
+          className="w-6 h-3 sm:w-[42px] sm:h-[18px]"
+        />
       ),
     },
   ];
+
   let activeServices = [];
-  if (activeCategory === "Strategy") {
-    activeServices = strategyServices;
-  }
-  if (activeCategory === "Design") {
-    activeServices = designServices;
-  }
-  if (activeCategory === "Web Development") {
-    activeServices = development;
-  }
+  if (activeCategory === "Strategy") activeServices = strategyServices;
+  if (activeCategory === "Design") activeServices = designServices;
+  if (activeCategory === "Web Development") activeServices = development;
 
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+    <div className="px-6 sm:px-12 lg:px-24 py-12 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      {/* Heading */}
       <div className="flex flex-col items-center justify-center">
-        <p className="text-[#E8E8E8] text-5xl font-bold ">Our Services</p>
-        <p className="text-[#E8E8E8] text-2xl font-medium max-w-3xl mt-4">
-          We`ve helped many startups and companies to design high-quality
-          digital products, websites, platforms, mobile apps that meet business
-          goals and cover user`s needs.
+        <p className="text-[#E8E8E8] text-3xl sm:text-5xl font-bold">
+          Our Services
+        </p>
+        <p className="text-[#E8E8E8] text-base sm:text-2xl font-medium max-w-xl sm:max-w-3xl mt-4">
+          We’ve helped many startups and companies design high-quality digital
+          products, websites, platforms, and mobile apps that meet business
+          goals and user needs.
         </p>
       </div>
-      <div className="flex  justify-center gap-4 mt-10">
-        <button
-          onClick={() => setActiveCategory("Strategy")}
-          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
-            activeCategory === "Strategy"
-              ? "bg-white text-[#983232]"
-              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
-          }`}
-        >
-          Strategy
-        </button>
-        <button
-          onClick={() => setActiveCategory("Design")}
-          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
-            activeCategory === "Design"
-              ? "bg-white text-[#983232]"
-              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
-          }`}
-        >
-          Design
-        </button>
-        <button
-          onClick={() => setActiveCategory("Web Development")}
-          className={` text-2xl font-bold rounded-2xl items-center px-10 py-4  cursor-pointer ${
-            activeCategory === "Web Development"
-              ? "bg-white text-[#983232]"
-              : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
-          }`}
-        >
-          Web Development
-        </button>
+
+      {/* Category Buttons */}
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-8 sm:mt-10">
+        {["Strategy", "Design", "Web Development"].map((category) => (
+          <button
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`text-base sm:text-2xl font-bold rounded-xl sm:rounded-2xl px-6 sm:px-10 py-2 sm:py-4 cursor-pointer ${
+              activeCategory === category
+                ? "bg-white text-[#983232]"
+                : "bg-[url('/services-bg.png')] bg-cover bg-center text-white"
+            }`}
+          >
+            {category}
+          </button>
+        ))}
       </div>
-      <div className="flex flex-col  mt-10 bg-[#D9D9D9] rounded-[30px] p-10">
+
+      {/* Services List */}
+      <div className="flex flex-col mt-8 sm:mt-10 bg-[#D9D9D9] rounded-2xl sm:rounded-[30px] p-6 sm:p-10">
         {activeServices.map((service, index) => (
-          <div key={index} className="flex  justify-between items-center mb-6">
-            <span className="text-3xl font-medium leading-[150%] tracking-[0]">
+          <div
+            key={index}
+            className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0 mb-6"
+          >
+            <span className="text-lg sm:text-2xl md:text-3xl font-medium leading-[150%]">
               {service.stack}
             </span>
-            <h4 className="text-3xl text-[#7E7E7E] font-medium leading-[150%] tracking-[0]">
+            <h4 className="text-base sm:text-xl md:text-2xl text-[#7E7E7E] font-medium leading-[150%]">
               {service.technology}
             </h4>
             <span>{service.icon}</span>
@@ -1032,7 +921,6 @@ function Faqs() {
       answer:
         "Yes, UnitFator supports integrations with popular tools like Slack, Google Workspace, and accounting software.",
     },
-
     {
       question: "How can I contact support?",
       answer:
@@ -1046,22 +934,22 @@ function Faqs() {
   ];
 
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/faqs.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-5xl font-bold text-[#E8E8E8] mb-8">
+    <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/faqs.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#E8E8E8] mb-6 sm:mb-8">
         Frequently Asked Questions
       </h2>
-      <div className="max-w-3xl mx-auto text-left">
+      <div className="max-w-3xl w-full mx-auto text-left">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  bg-black/50 shadow-2xl"
+            className="flex flex-col mb-4 sm:mb-6 py-4 px-3 sm:px-4 rounded-xl sm:rounded-2xl text-white bg-black/50 shadow-xl sm:shadow-2xl"
           >
-            <div className="flex flex-col gap-4 ">
-              <p className=" text-2xl font-medium leading-[150%] tracking-[0] ">
-                {faq.question}
-              </p>
-              <p className="text-lg text-white  mt-2 ">{faq.answer}</p>
-            </div>
+            <p className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed">
+              {faq.question}
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-white mt-2">
+              {faq.answer}
+            </p>
           </div>
         ))}
       </div>
@@ -1075,19 +963,21 @@ function Projects() {
     "Guaranteed on-time deliverables",
     "Hiring system with immediate start",
   ];
+
   return (
-    <section className=" p-24 w-full h-full items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
-      <div className="flex flex-col">
-        <p className="text-2xl  leading-[150%] tracking-[0] text-[#E8E8E8]">
+    <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="flex flex-col items-center">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#E8E8E8]">
           170+ Successful Projects
         </p>
-        <h2 className="text-4xl md:text-5xl font-bold leading-[150%] tracking-[0] text-[#E8E8E8] ">
-          Our custom approach leads <br />
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-[#E8E8E8] mt-2">
+          Our custom approach leads <br className="hidden sm:block" />
           projects to success
         </h2>
       </div>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-stretch mt-10">
-        <div className="relative w-full h-auto rounded-2xl overflow-hidden shadow-lg">
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch mt-10">
+        <div className="relative w-full h-60 sm:h-80 md:h-auto rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/av-lab-3.png"
             alt="Project Showcase"
@@ -1096,23 +986,23 @@ function Projects() {
           />
         </div>
 
-        <div className="w-full h-auto bg-[url('/checks-bg.png')] bg-no-repeat bg-center bg-cover p-8 rounded-2xl shadow-lg space-y-6 flex flex-col justify-between">
+        <div className="w-full h-auto bg-[url('/checks-bg.png')] bg-no-repeat bg-center bg-cover p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 flex flex-col justify-between">
           <div className="space-y-6">
-            <h3 className="text-[40px] text-left text-[#E8E8E8] font-bold leading-[150%] tracking-[0]">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-left text-[#E8E8E8] font-bold leading-[150%]">
               Unitfactor is your perfect choice in terms of:
             </h3>
 
-            <ul className="space-y-4 ">
+            <ul className="space-y-3 sm:space-y-4">
               {strategies.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3">
+                <li key={idx} className="flex items-start gap-2 sm:gap-3">
                   <Image
                     src={"/check.png"}
                     alt="Check Icon"
-                    width={15}
-                    height={10}
+                    width={16}
+                    height={16}
                     className="mt-1"
                   />
-                  <span className="text-[#E8E8E8] font-medium tracking-[0] leading-[150%]">
+                  <span className="text-sm sm:text-base md:text-lg text-[#E8E8E8] font-medium leading-relaxed">
                     {item}
                   </span>
                 </li>
@@ -1120,32 +1010,20 @@ function Projects() {
             </ul>
           </div>
 
-          <button className="group self-start flex items-center cursor-pointer mt-4 px-6 py-3 rounded-[30px] bg-white text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
+          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 sm:px-6 py-2 sm:py-3 rounded-[30px] bg-white text-base sm:text-lg md:text-xl lg:text-2xl text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
             <span>Discover More About Us</span>
             <svg
-              width="46"
-              height="22"
+              width="30"
+              height="16"
               viewBox="0 0 46 22"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="text-[#0A3253] ml-4 group-hover:text-white "
+              className="ml-3 sm:ml-4 text-[#0A3253] group-hover:text-white"
             >
-              <g clipPath="url(#clip0_1168_69)">
-                <path
-                  d="M0 11.3547C0.362413 12.4199 1.12684 12.7873 2.24048 12.7861C14.5613 12.7671 26.8821 12.7742 39.203 12.7742C39.377 12.7742 39.551 12.7742 39.8222 12.7742C39.6266 12.9757 39.5006 13.1119 39.3686 13.2423C37.4389 15.1406 35.508 17.0401 33.576 18.9372C33.0611 19.4432 32.8967 20.0535 33.0911 20.7277C33.282 21.3889 33.7536 21.8108 34.4388 21.9577C35.1084 22.1011 35.6712 21.8807 36.1513 21.4091C37.9009 19.6873 39.6542 17.9691 41.4062 16.2497C42.7119 14.9676 44.0175 13.6855 45.3208 12.401C46.2256 11.5087 46.2292 10.4956 45.322 9.60328C42.2787 6.60888 39.2318 3.61685 36.1837 0.627192C35.3712 -0.169102 34.2864 -0.207022 33.5472 0.520544C32.7971 1.25878 32.8463 2.34183 33.6732 3.1559C35.5812 5.03525 37.4905 6.91223 39.4022 8.78802C39.5186 8.90178 39.653 8.99895 39.779 9.10322C39.767 9.1447 39.755 9.18499 39.743 9.22646C39.5786 9.22646 39.4142 9.22646 39.251 9.22646C26.9157 9.22646 14.5793 9.23357 2.24408 9.21461C1.12804 9.21224 0.363613 9.58076 0 10.6449C0 10.8819 0 11.1177 0 11.3547Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1168_69">
-                  <rect
-                    width="46"
-                    height="22"
-                    fill="white"
-                    transform="matrix(1 0 0 -1 0 22)"
-                  />
-                </clipPath>
-              </defs>
+              <path
+                d="M0 11.3547C0.362413 12.4199 1.12684 12.7873 2.24048 12.7861C14.5613 12.7671 26.8821 12.7742 39.203 12.7742C39.377 12.7742 39.551 12.7742 39.8222 12.7742C39.6266 12.9757 39.5006 13.1119 39.3686 13.2423C37.4389 15.1406 35.508 17.0401 33.576 18.9372C33.0611 19.4432 32.8967 20.0535 33.0911 20.7277C33.282 21.3889 33.7536 21.8108 34.4388 21.9577C35.1084 22.1011 35.6712 21.8807 36.1513 21.4091C37.9009 19.6873 39.6542 17.9691 41.4062 16.2497C42.7119 14.9676 44.0175 13.6855 45.3208 12.401C46.2256 11.5087 46.2292 10.4956 45.322 9.60328C42.2787 6.60888 39.2318 3.61685 36.1837 0.627192C35.3712 -0.169102 34.2864 -0.207022 33.5472 0.520544C32.7971 1.25878 32.8463 2.34183 33.6732 3.1559C35.5812 5.03525 37.4905 6.91223 39.4022 8.78802C39.5186 8.90178 39.653 8.99895 39.779 9.10322C39.767 9.1447 39.755 9.18499 39.743 9.22646C39.5786 9.22646 39.4142 9.22646 39.251 9.22646C26.9157 9.22646 14.5793 9.23357 2.24408 9.21461C1.12804 9.21224 0.363613 9.58076 0 10.6449C0 10.8819 0 11.1177 0 11.3547Z"
+                fill="currentColor"
+              />
             </svg>
           </button>
         </div>
@@ -1156,25 +1034,24 @@ function Projects() {
 
 function Partners() {
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-black">
-      <div className="max-w-7xl p-10 mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[30px] grid md:grid-cols-2 gap-12 items-stretch mt-10">
-        <div className="w-full h-auto  p-8  space-y-6 flex flex-col justify-between">
-          <div className="space-y-6 flex flex-col items-start">
-            <h3 className="text-[40px] text-left text-white max-w-4xl font-bold leading-[150%] tracking-[0]">
-              Get a reliable partner that provides solutions for your success
-            </h3>
+    <div className="px-6 sm:px-12 md:px-24 py-16 w-full h-full items-center justify-center text-center bg-black">
+      <div className="max-w-7xl p-6 sm:p-10 mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mt-10">
+        <div className="w-full h-auto space-y-6 flex flex-col justify-between text-left">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-snug sm:leading-[140%] tracking-normal">
+            Get a reliable partner that provides solutions for your success
+          </h3>
 
-            <button className=" bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
-              Hire
-            </button>
-          </div>
+          <button className=" bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl md:text-2xl font-bold px-5 py-3 rounded-xl md:rounded-2xl mt-6 sm:mt-8 cursor-pointer transition">
+            Hire
+          </button>
         </div>
-        <div className="relative  flex items-center justify-center  overflow-hidden  w-full mt-10 h-[300px]">
+
+        <div className="relative flex items-center justify-center w-full h-[200px] sm:h-[250px] md:h-[300px] mt-8 md:mt-0">
           <Image
             src="/av-lab-3.png"
             alt="Project Showcase"
             fill
-            className="object-contain rounded-2xl"
+            className="object-contain rounded-xl md:rounded-2xl"
           />
         </div>
       </div>

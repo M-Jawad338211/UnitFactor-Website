@@ -145,14 +145,11 @@ function Contacts() {
             <div className="flex items-center gap-3 mt-6">
               <button
                 type="submit"
-                className="flex items-center  bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-2xl  text-[40px] font-bold"
+                className="flex items-center  bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-2xl  text-3xl font-bold"
               >
                 Hire Us
               </button>
             </div>
-            <p className="text-xs font-bold text-white pr-5 text-right  mt-4">
-              By submitting this form you<br></br> agree to our Privacy Policy
-            </p>
           </form>
         </div>
       </div>
@@ -160,11 +157,6 @@ function Contacts() {
   );
 }
 function Faqs() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleOpen = (index) => {
-    setIsOpen(isOpen === index ? null : index);
-  };
-
   const faqs = [
     {
       question: "What is UnitFator?",
@@ -200,7 +192,7 @@ function Faqs() {
   ];
 
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/rectangle770.png')] bg-no-repeat bg-center bg-cover">
+    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/Rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <h2 className="text-5xl font-bold text-[#E8E8E8] mb-8">
         Frequently Asked Questions
       </h2>
@@ -208,27 +200,14 @@ function Faqs() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  cursor-pointer bg-black/50 shadow-2xl   "
+            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  bg-black/50 shadow-2xl"
           >
-            <div
-              className="flex gap-4 items-center "
-              onClick={() => toggleOpen(index)}
-            >
-              <img
-                src="./angle.png"
-                className={`w-[24px] h-[20px]  transform transition-transform duration-300 ease-in-out ${
-                  isOpen === index ? "rotate-90" : "rotate-0"
-                }`}
-              />
-
-              <p className=" text-[32px] font-medium leading-[150%] tracking-[0] ">
+            <div className="flex flex-col gap-4 ">
+              <p className=" text-2xl font-medium leading-[150%] tracking-[0] ">
                 {faq.question}
               </p>
+              <p className="text-lg text-white  mt-2 ">{faq.answer}</p>
             </div>
-
-            {isOpen === index && (
-              <p className="text-lg text-white  mt-4 pl-9">{faq.answer}</p>
-            )}
           </div>
         ))}
       </div>

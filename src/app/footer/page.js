@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default function Footer() {
   const strategyServices = [
     "Product Discovery",
@@ -44,17 +45,20 @@ export default function Footer() {
     "Website Redesign",
     "Motion Graphics & Animation",
   ];
+
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover">
-      <div className="flex justify-between">
-        <div className="flex flex-col items-start gap-20">
+    <div className="w-full bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover px-6 sm:px-12 lg:px-24 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
+        {/* Logo + Info */}
+        <div className="flex flex-col items-start gap-10">
           <Link href="/">
             <svg
-              width="280"
-              height="69"
+              width="350"
+              height="89"
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-32 h-auto md:w-[280px] md:h-[69px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
@@ -174,65 +178,69 @@ export default function Footer() {
             </svg>
           </Link>
           <div className="text-left text-[#E8E8E8]">
-            <h3 className="text-2xl font-bold">Office</h3>
-            <p className="text-2xl font-medium mt-2">
+            <h3 className="text-lg sm:text-xl font-bold">Office</h3>
+            <p className="text-base sm:text-lg font-medium mt-2">
               Ravi Block, Iqbal Town
               <br />
               Lahore
             </p>
           </div>
           <div className="text-left text-[#E8E8E8]">
-            <h3 className="text-2xl font-bold">Drop us a line</h3>
-            <p className="text-2xl font-medium mt-2">@unitfactor.org</p>
+            <h3 className="text-lg sm:text-xl font-bold">Drop us a line</h3>
+            <p className="text-base sm:text-lg font-medium mt-2">
+              @unitfactor.org
+            </p>
           </div>
         </div>
 
-        <div className="mt-6 ">
-          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+        {/* Strategy */}
+        <div className="mt-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
             Strategy Services
           </h3>
-          <div className="mt-5">
-            {strategyServices.map((service, index) => {
-              return (
-                <div className="mt-2" key={index}>
-                  <p className="text-[#E8E8E8] text-[16px] font-medium">
-                    {service}
-                  </p>
-                </div>
-              );
-            })}
+          <div className="mt-4 space-y-2">
+            {strategyServices.map((service, index) => (
+              <p
+                className="text-[#E8E8E8] text-sm sm:text-base font-medium"
+                key={index}
+              >
+                {service}
+              </p>
+            ))}
           </div>
         </div>
-        <div className="mt-6">
-          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+
+        {/* Development */}
+        <div className="mt-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
             Development Services
           </h3>
-          <div className="mt-5">
-            {developmentServices.map((service, index) => {
-              return (
-                <div className="mt-2" key={index}>
-                  <p className="text-[#E8E8E8] text-[16px] font-medium">
-                    {service}
-                  </p>
-                </div>
-              );
-            })}
+          <div className="mt-4 space-y-2">
+            {developmentServices.map((service, index) => (
+              <p
+                className="text-[#E8E8E8] text-sm sm:text-base font-medium"
+                key={index}
+              >
+                {service}
+              </p>
+            ))}
           </div>
         </div>
-        <div className="mt-6">
-          <h3 className="text-[16px] font-bold text-[#E8E8E8]">
+
+        {/* Designing */}
+        <div className="mt-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
             Designing Services
           </h3>
-          <div className="mt-5">
-            {designingServices.map((service, index) => {
-              return (
-                <div className="mt-2" key={index}>
-                  <p className="text-[#E8E8E8] text-[16px] font-medium">
-                    {service}
-                  </p>
-                </div>
-              );
-            })}
+          <div className="mt-4 space-y-2">
+            {designingServices.map((service, index) => (
+              <p
+                className="text-[#E8E8E8] text-sm sm:text-base font-medium"
+                key={index}
+              >
+                {service}
+              </p>
+            ))}
           </div>
         </div>
       </div>
