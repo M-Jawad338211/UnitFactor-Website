@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#0A3253]/80 fixed top-0 z-50">
+    <header className="w-full  fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="block">
@@ -17,7 +17,7 @@ export default function Header() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-32 h-auto md:w-[350px] md:h-[89px]"
+              className="w-32 h-auto md:w-[280px] md:h-[69px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
@@ -139,45 +139,45 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <Link href="/" className="text-white font-bold hover:text-[#983232]">
+          <Link
+            href="/"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
+          >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-white font-bold hover:text-[#983232]"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-white font-bold hover:text-[#983232]"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Services
           </Link>
           <Link
             href="/blog"
-            className="text-white font-bold hover:text-[#983232]"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Blog
           </Link>
           <Link
             href="/portfolio"
-            className="text-white font-bold hover:text-[#983232]"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Portfolio
           </Link>
           <Link
             href="/contacts"
-            className="text-white font-bold hover:text-[#983232]"
+            className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Contacts
           </Link>
         </nav>
 
         <div className="flex items-center space-x-4">
-          <button className="p-2 rounded-full">
-            <Search size={20} className="text-white" />
-          </button>
           <Link
             href="/contact"
             className="hidden md:inline bg-white hover:bg-[#983232] text-[#0A3253] hover:text-white font-bold px-4 py-2 rounded-[40px]"

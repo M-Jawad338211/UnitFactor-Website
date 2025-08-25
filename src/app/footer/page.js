@@ -50,8 +50,8 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-20">
           <Link href="/">
             <svg
-              width="320"
-              height="81"
+              width="280"
+              height="69"
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

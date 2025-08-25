@@ -7,9 +7,10 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hiring />
       <Solutions />
+
       <Experiences />
       <Animations />
       <CardCarousel />
@@ -23,41 +24,37 @@ export default function Home() {
 function Hiring() {
   return (
     <div
-      className="w-full h-full bg-cover bg-center pt-30"
+      className="w-screen h-screen bg-cover bg-center pt-20 overflow-hidden "
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      <div>
-        <div className="flex flex-col items-center justify-center h-full mt-20">
-          <div className="flex items-center gap-3">
-            <p className="text-[20px] font-bold text-white">
-              Web Development &amp; UI/UX Design
-            </p>
-
+      <div className="flex flex-col items-center justify-center h-full mt-10 sm:mt-20 px-4">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <p className="text-lg sm:text-[20px] font-semibold text-white text-center">
+            Web Development &amp; UI/UX Design
+          </p>
+          <div className="flex gap-2">
             {["SaaS", "Web 3.0", "AI"].map((label) => (
               <span
                 key={label}
-                className="border border-white text-white px-4 py-1 rounded-full"
+                className="border-2 border-white text-white font-semibold text-sm sm:text-base px-3 sm:px-4 py-1 rounded-full"
               >
                 {label}
               </span>
             ))}
           </div>
-          <div className="flex flex-col items-center mt-8 mb-10">
-            <p className="text-[40px] font-bold text-white text-center max-w-4xl">
-              Crafting Unique, Purpose-Driven Designs That Capture Attention,
-              Build Trust, and Turn Visitors into Loyal Customers
-            </p>
-            <a href="#" target="_blank">
-              <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-3xl font-bold px-6 py-3 rounded-2xl mt-10 cursor-pointer">
-                Hire Us
-              </button>
-            </a>
-            <p className="text-[20px] font-bold text-white max-w-xs ml-auto mt-4 ">
-              Subscribe to our services on a monthly basis and get an
-              experienced product designer that will integrate in your team like
-              an in-house professional.
-            </p>
-          </div>
+        </div>
+
+        <div className="flex flex-col items-center mt-6 sm:mt-8 mb-8 sm:mb-10">
+          <p className="text-2xl sm:text-4xl font-bold text-white text-center max-w-sm sm:max-w-4xl leading-snug sm:leading-tight">
+            Crafting Unique, Purpose-Driven Designs That Capture Attention,
+            Build Trust, and Turn Visitors into Loyal Customers
+          </p>
+
+          <a href="#" target="_blank">
+            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-lg sm:text-3xl font-bold px-5 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer">
+              Hire Us
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -79,7 +76,7 @@ function Solutions() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="ml-3 mt-2"
+            className="ml-2 sm:ml-3 mt-2"
           >
             <path
               d="M0 11.3542C0.362413 12.4194 1.12684 12.7868 2.24048 12.7856C14.5613 12.7666 26.8821 12.7737 39.203 12.7737C39.377 12.7737 39.551 12.7737 39.8222 12.7737C39.6266 12.9752 39.5006 13.1115 39.3686 13.2418C37.4389 15.1401 35.508 17.0396 33.576 18.9367C33.0611 19.4427 32.8967 20.053 33.0911 20.7272C33.282 21.3884 33.7536 21.8103 34.4388 21.9572C35.1084 22.1006 35.6712 21.8802 36.1513 21.4086C37.9009 19.6868 39.6542 17.9686 41.4062 16.2492C42.7119 14.9671 44.0175 13.685 45.3208 12.4005C46.2256 11.5082 46.2292 10.4951 45.322 9.60279C42.2787 6.60839 39.2318 3.61636 36.1837 0.626703C35.3712 -0.16959 34.2864 -0.20751 33.5472 0.520056C32.7971 1.25829 32.8463 2.34134 33.6732 3.15541C35.5812 5.03476 37.4905 6.91174 39.4022 8.78754C39.5186 8.90129 39.653 8.99846 39.779 9.10274C39.767 9.14421 39.755 9.1845 39.743 9.22597C39.5786 9.22597 39.4142 9.22597 39.251 9.22597C26.9157 9.22597 14.5793 9.23308 2.24408 9.21412C1.12804 9.21175 0.363613 9.58028 0 10.6444C0 10.8814 0 11.1172 0 11.3542Z"
@@ -102,7 +99,7 @@ function Solutions() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="ml-3 mt-2"
+            className="ml-2 sm:ml-3 mt-2"
           >
             <path
               d="M0 11.3542C0.362413 12.4194 1.12684 12.7868 2.24048 12.7856C14.5613 12.7666 26.8821 12.7737 39.203 12.7737C39.377 12.7737 39.551 12.7737 39.8222 12.7737C39.6266 12.9752 39.5006 13.1115 39.3686 13.2418C37.4389 15.1401 35.508 17.0396 33.576 18.9367C33.0611 19.4427 32.8967 20.053 33.0911 20.7272C33.282 21.3884 33.7536 21.8103 34.4388 21.9572C35.1084 22.1006 35.6712 21.8802 36.1513 21.4086C37.9009 19.6868 39.6542 17.9686 41.4062 16.2492C42.7119 14.9671 44.0175 13.685 45.3208 12.4005C46.2256 11.5082 46.2292 10.4951 45.322 9.60279C42.2787 6.60839 39.2318 3.61636 36.1837 0.626703C35.3712 -0.16959 34.2864 -0.20751 33.5472 0.520056C32.7971 1.25829 32.8463 2.34134 33.6732 3.15541C35.5812 5.03476 37.4905 6.91174 39.4022 8.78754C39.5186 8.90129 39.653 8.99846 39.779 9.10274C39.767 9.14421 39.755 9.1845 39.743 9.22597C39.5786 9.22597 39.4142 9.22597 39.251 9.22597C26.9157 9.22597 14.5793 9.23308 2.24408 9.21412C1.12804 9.21175 0.363613 9.58028 0 10.6444C0 10.8814 0 11.1172 0 11.3542Z"
@@ -125,7 +122,7 @@ function Solutions() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="ml-3 mt-2"
+            className="ml-2 sm:ml-3 mt-2"
           >
             <path
               d="M0 11.3542C0.362413 12.4194 1.12684 12.7868 2.24048 12.7856C14.5613 12.7666 26.8821 12.7737 39.203 12.7737C39.377 12.7737 39.551 12.7737 39.8222 12.7737C39.6266 12.9752 39.5006 13.1115 39.3686 13.2418C37.4389 15.1401 35.508 17.0396 33.576 18.9367C33.0611 19.4427 32.8967 20.053 33.0911 20.7272C33.282 21.3884 33.7536 21.8103 34.4388 21.9572C35.1084 22.1006 35.6712 21.8802 36.1513 21.4086C37.9009 19.6868 39.6542 17.9686 41.4062 16.2492C42.7119 14.9671 44.0175 13.685 45.3208 12.4005C46.2256 11.5082 46.2292 10.4951 45.322 9.60279C42.2787 6.60839 39.2318 3.61636 36.1837 0.626703C35.3712 -0.16959 34.2864 -0.20751 33.5472 0.520056C32.7971 1.25829 32.8463 2.34134 33.6732 3.15541C35.5812 5.03476 37.4905 6.91174 39.4022 8.78754C39.5186 8.90129 39.653 8.99846 39.779 9.10274C39.767 9.14421 39.755 9.1845 39.743 9.22597C39.5786 9.22597 39.4142 9.22597 39.251 9.22597C26.9157 9.22597 14.5793 9.23308 2.24408 9.21412C1.12804 9.21175 0.363613 9.58028 0 10.6444C0 10.8814 0 11.1172 0 11.3542Z"
@@ -138,30 +135,44 @@ function Solutions() {
   ];
 
   return (
-    <div className="flex flex-col p-28 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover">
-      <p className="text-[64px] font-normal text-white">OUR SOLUTION</p>
-      <p className="text-[24px] font-medium text-white max-w-5xl">
+    <div className="flex flex-col px-4 sm:px-12 lg:px-28 py-12 sm:py-20 lg:py-28 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <p className="text-3xl sm:text-5xl lg:text-[64px] text-left font-normal text-white mb-4">
+        OUR SOLUTION
+      </p>
+      <p className="text-base sm:text-lg lg:text-[24px] font-medium text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl leading-relaxed">
         We offer a wide range of digital services designed to elevate your
         business. From custom website development to complete IT solutions, our
         team delivers innovative, scalable, and results-driven products tailored
         to your needs.
       </p>
-      <div className="max-w-8xl mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div className="w-full mx-auto py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className=" group bg-[#D9D9D9] hover:bg-[url('/services-bg.png')] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              className={`group bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  shadow-md overflow-hidden hover:shadow-lg transition-all duration-300  ${
+                index === 0
+                  ? "rounded-bl-3xl rounded-br-3xl rounded-tr-3xl"
+                  : ""
+              }
+    ${
+      index === 1
+        ? " rounded-tl-3xl rounded-bl-3xl rounded-br-3xl rounded-tr-3xl "
+        : ""
+    }
+    ${index === 2 ? "rounded-tl-3xl rounded-bl-3xl rounded-tr-3xl" : ""}
+`}
             >
-              <div className="p-6 text-center justify-between">
-                <h3 className="text-[24px] font-bold text-black group-hover:text-white mb-3">
+              <div className="p-6 flex flex-col h-full text-center">
+                <h3 className="text-lg sm:text-xl lg:text-[24px] font-bold text-black group-hover:text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-[#717171] group-hover:text-white mb-5 text-xl font-medium leading-[150%] tracking-[0]">
+                <p className="text-sm sm:text-base lg:text-xl text-[#717171] group-hover:text-white mb-5 font-medium leading-relaxed">
                   {service.description}
                 </p>
-                <button className="bg-[#0A3253] group-hover:bg-white p-3.5 rounded-lg flex items-center justify-center gap-2 mx-auto cursor-pointer">
-                  <span className="flex text-white group-hover:text-black font-bold  duration-300">
+                <button className="bg-[#0A3253] group-hover:bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-lg flex items-center justify-center gap-2 mx-auto cursor-pointer mt-auto">
+                  <span className="flex text-white group-hover:text-black font-bold duration-300">
                     {service.cta}
                   </span>
                 </button>
@@ -201,7 +212,7 @@ function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[#983232] group-hover:text-white"
+            className="text-[#983232] group-hover:text-white mt-2"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -264,7 +275,7 @@ function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[#983232] group-hover:text-white"
+            className="text-[#983232] group-hover:text-white mt-2"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -323,7 +334,7 @@ function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[#983232] group-hover:text-white"
+            className="text-[#983232] group-hover:text-white mt-2"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -386,7 +397,7 @@ function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[983232] group-hover:text-white"
+            className="text-[983232] group-hover:text-white mt-2"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -453,7 +464,7 @@ function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[#983232] group-hover:text-white"
+            className="text-[#983232] group-hover:text-white mt-2"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -478,11 +489,11 @@ function Experiences() {
     },
   ];
   return (
-    <div className="flex flex-col p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover">
-      <p className="text-5xl font-bold text-white max-w-xl leading-[150%] tracking-[0]">
+    <div className="flex flex-col p-2 md:p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <p className="text-[28px] md:text-5xl font-bold text-white max-w-xl leading-[150%] tracking-[0]">
         We have extensive industry experiences
       </p>
-      <p className="text-[28px] font-medium leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
+      <p className="text-base md:text-[28px] font-medium leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
         Our Team have completed projects in different niches. They know how to
         add business value and provide personalized design solutions for your
         digital product.
@@ -492,7 +503,7 @@ function Experiences() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group flex gap-8 bg-[#D9D9D9] hover:bg-[url('/new-main.png')] hover:bg-cover hover:bg-center  p-6 rounded-lg"
+              className="group flex gap-8 bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  p-6 rounded-3xl"
             >
               <div className="w-10 h-10 flex items-center justify-center rounded-full ">
                 {service.icon}
@@ -505,7 +516,7 @@ function Experiences() {
                   {service.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1  border rounded-full text-sm font-medium text-[#585858] group-hover:text-[#C7C7C7] "
+                      className="px-3 py-1  border-2 rounded-full text-sm font-medium text-[#585858] group-hover:text-[#C7C7C7] "
                     >
                       {tag}
                     </span>
@@ -522,7 +533,7 @@ function Experiences() {
 
 function Animations() {
   return (
-    <div className="flex flex-col p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover">
+    <div className="flex flex-col p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <p className="text-5xl font-normal leading-[150%] tracking-[0] text-white max-w-xl">
         Turning projects into trusting partnerships
       </p>
@@ -768,7 +779,7 @@ professionally and on time`,
   };
 
   return (
-    <div className="flex flex-col w-full mx-auto p-28 h-full bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover">
+    <div className="flex flex-col w-full mx-auto p-28 h-full bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <div className="flex justify-between items-center">
         <p className="text-5xl font-bold text-white max-w-3xl leading-[150%]">
           Long-term partnerships is what we are always striving{" "}
@@ -941,7 +952,7 @@ function Services() {
   }
 
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover">
+    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <div className="flex flex-col items-center justify-center">
         <p className="text-[#E8E8E8] text-5xl font-bold ">Our Services</p>
         <p className="text-[#E8E8E8] text-2xl font-medium max-w-3xl mt-4">
@@ -984,11 +995,11 @@ function Services() {
       </div>
       <div className="flex flex-col  mt-10 bg-[#D9D9D9] rounded-[30px] p-10">
         {activeServices.map((service, index) => (
-          <div key={index} className="flex  justify-between mb-6">
-            <span className="text-4xl font-medium leading-[150%] tracking-[0]">
+          <div key={index} className="flex  justify-between items-center mb-6">
+            <span className="text-3xl font-medium leading-[150%] tracking-[0]">
               {service.stack}
             </span>
-            <h4 className="text-4xl text-[#7E7E7E] font-medium leading-[150%] tracking-[0]">
+            <h4 className="text-3xl text-[#7E7E7E] font-medium leading-[150%] tracking-[0]">
               {service.technology}
             </h4>
             <span>{service.icon}</span>
@@ -1000,11 +1011,6 @@ function Services() {
 }
 
 function Faqs() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleOpen = (index) => {
-    setIsOpen(isOpen === index ? null : index);
-  };
-
   const faqs = [
     {
       question: "What is UnitFator?",
@@ -1040,7 +1046,7 @@ function Faqs() {
   ];
 
   return (
-    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/faqs.png')] bg-no-repeat bg-center bg-cover">
+    <div className="p-24 w-full h-full items-center justify-center text-center bg-[url('/faqs.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <h2 className="text-5xl font-bold text-[#E8E8E8] mb-8">
         Frequently Asked Questions
       </h2>
@@ -1048,27 +1054,14 @@ function Faqs() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  cursor-pointer bg-black/50 shadow-2xl   "
+            className=" flex flex-col mb-6 py-4 px-4 rounded-2xl text-white  bg-black/50 shadow-2xl"
           >
-            <div
-              className="flex gap-4 items-center "
-              onClick={() => toggleOpen(index)}
-            >
-              <img
-                src="./angle.png"
-                className={`w-[24px] h-[20px]  transform transition-transform duration-300 ease-in-out ${
-                  isOpen === index ? "rotate-90" : "rotate-0"
-                }`}
-              />
-
-              <p className=" text-[32px] font-medium leading-[150%] tracking-[0] ">
+            <div className="flex flex-col gap-4 ">
+              <p className=" text-2xl font-medium leading-[150%] tracking-[0] ">
                 {faq.question}
               </p>
+              <p className="text-lg text-white  mt-2 ">{faq.answer}</p>
             </div>
-
-            {isOpen === index && (
-              <p className="text-lg text-white  mt-4 pl-9">{faq.answer}</p>
-            )}
           </div>
         ))}
       </div>
