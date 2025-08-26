@@ -8,12 +8,6 @@ export default function Footer() {
     "Market Research",
     "Business Analysis",
     "Go-to-Market Strategy",
-    "Technology Consulting",
-    "Competitor Analysis",
-    "Customer Journey Mapping",
-    "Digital Transformation Strategy",
-    "Product Roadmapping",
-    "Innovation Workshops",
   ];
 
   const developmentServices = [
@@ -23,12 +17,6 @@ export default function Footer() {
     "Custom Software Solutions",
     "E-commerce Development",
     "Performance Optimization",
-    "Maintenance & Support",
-    "Backend Development",
-    "Frontend Development",
-    "DevOps & Cloud Services",
-    "Database Design & Management",
-    "AI & Machine Learning Solutions",
   ];
 
   const designingServices = [
@@ -38,19 +26,13 @@ export default function Footer() {
     "User Interface Design",
     "User Experience Design",
     "Graphic Design",
-    "Design System Creation",
-    "Logo Design",
-    "Pitch Deck Design",
-    "Mobile App Design",
-    "Website Redesign",
-    "Motion Graphics & Animation",
   ];
 
   return (
     <div className="w-full bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover px-6 sm:px-12 lg:px-24 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 text-center">
         {/* Logo + Info */}
-        <div className="flex flex-col items-start gap-10">
+        <div className="flex flex-col items-center md:items-start gap-10">
           <Link href="/">
             <svg
               width="350"
@@ -58,7 +40,7 @@ export default function Footer() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-32 h-auto md:w-[280px] md:h-[69px]"
+              className="w-36 h-auto md:w-[280px] md:h-[69px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
@@ -177,7 +159,7 @@ export default function Footer() {
               </defs>
             </svg>
           </Link>
-          <div className="text-left text-[#E8E8E8]">
+          <div className=" text-center md:text-left text-[#E8E8E8]">
             <h3 className="text-lg sm:text-xl font-bold">Office</h3>
             <p className="text-base sm:text-lg font-medium mt-2">
               Ravi Block, Iqbal Town
@@ -195,7 +177,7 @@ export default function Footer() {
 
         {/* Strategy */}
         <div className="mt-4">
-          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
             Strategy Services
           </h3>
           <div className="mt-4 space-y-2">
@@ -212,7 +194,7 @@ export default function Footer() {
 
         {/* Development */}
         <div className="mt-4">
-          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
             Development Services
           </h3>
           <div className="mt-4 space-y-2">
@@ -229,13 +211,13 @@ export default function Footer() {
 
         {/* Designing */}
         <div className="mt-4">
-          <h3 className="text-lg sm:text-xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
             Designing Services
           </h3>
           <div className="mt-4 space-y-2">
             {designingServices.map((service, index) => (
               <p
-                className="text-[#E8E8E8] text-sm sm:text-base font-medium"
+                className="text-[#E8E8E8] text-lg sm:text-base font-medium"
                 key={index}
               >
                 {service}

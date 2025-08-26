@@ -1,9 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
 import "./app.css";
 import "./globals.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Home() {
   return (
@@ -138,7 +142,7 @@ function Solutions() {
       <p className="text-3xl sm:text-5xl lg:text-[64px] text-left font-normal text-white mb-4">
         OUR SOLUTION
       </p>
-      <p className="text-base sm:text-lg lg:text-[24px] font-medium text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl leading-relaxed">
+      <p className="text-base  md:text-2xl font-medium text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl leading-relaxed">
         We offer a wide range of digital services designed to elevate your
         business. From custom website development to complete IT solutions, our
         team delivers innovative, scalable, and results-driven products tailored
@@ -150,7 +154,7 @@ function Solutions() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  shadow-md overflow-hidden hover:shadow-lg transition-all duration-300  ${
+              className={`group bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  shadow-md overflow-hidden hover:shadow-lg transition-all duration-500  ${
                 index === 0
                   ? "rounded-bl-3xl rounded-br-3xl rounded-tr-3xl"
                   : ""
@@ -170,7 +174,7 @@ function Solutions() {
                 <p className="text-sm sm:text-base lg:text-xl text-[#717171] group-hover:text-white mb-5 font-medium leading-relaxed">
                   {service.description}
                 </p>
-                <button className="bg-[#0A3253] group-hover:bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-lg flex items-center justify-center gap-2 mx-auto cursor-pointer mt-auto">
+                <button className="bg-[#0A3253] group-hover:bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-2xl flex items-center justify-center gap-2 mx-auto cursor-pointer mt-auto">
                   <span className="flex text-white group-hover:text-black font-bold duration-300">
                     {service.cta}
                   </span>
@@ -489,10 +493,10 @@ function Experiences() {
   ];
   return (
     <div className="flex flex-col p-2 md:p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <p className="text-[28px] md:text-5xl font-bold text-white max-w-xl leading-[150%] tracking-[0]">
+      <p className="text-[28px] md:text-5xl font-bold text-white max-w-xl leading-tight tracking-[0]">
         We have extensive industry experiences
       </p>
-      <p className="text-base md:text-[28px] font-medium leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
+      <p className="text-base md:text-2xl font-medium leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
         Our Team have completed projects in different niches. They know how to
         add business value and provide personalized design solutions for your
         digital product.
@@ -502,7 +506,7 @@ function Experiences() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group flex gap-8 bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  p-6 rounded-3xl"
+              className="group flex gap-8 bg-gradient-to-b from-[#D9D9D9] to-[#D9D9D9] hover:from-[#983232] hover:to-[#000000]  p-7 rounded-3xl"
             >
               <div className="w-10 h-10 flex items-center justify-center rounded-full ">
                 {service.icon}
@@ -585,8 +589,6 @@ function Animation() {
 }
 
 function CardCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const cards = [
     {
       id: 1,
@@ -605,8 +607,8 @@ to backend integration, they handled everything
 professionally and on time`,
       icon: (
         <svg
-          width="42"
-          height="18"
+          width="36"
+          height="14"
           viewBox="0 0 46 22"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -628,94 +630,63 @@ professionally and on time`,
     },
   ];
 
-  const visibleCards = cards.slice(currentIndex, currentIndex + 2);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev < cards.length - 2 ? prev + 1 : 0));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : cards.length - 2));
-  };
-
   return (
-    <div className="flex flex-col w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-28 py-12 sm:py-16 md:py-20 lg:py-28 bg-[url('/partnership-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-left text-white leading-snug md:leading-[150%] max-w-full md:max-w-3xl">
-          Long-term partnerships is what we are always striving{" "}
-          <span className="text-black">to build</span>
-        </p>
-        <div className="flex space-x-2 self-end md:self-auto">
-          <button
-            onClick={prevSlide}
-            className="p-3 sm:p-4 cursor-pointer rounded-full bg-[#D9D9D9]"
-          >
-            <img src="./arrow.png" className="w-6 sm:w-8" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-3 sm:p-4 cursor-pointer rounded-full bg-[#D9D9D9]"
-          >
-            <img src="./right-arrow.png" className="w-6 sm:w-8" />
-          </button>
-        </div>
-      </div>
+    <div className="w-full bg-[url('/main.png')] bg-cover bg-center mx-auto py-12 px-4 sm:px-6">
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        className=" relative"
+      >
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div className="p-4 sm:p-6 md:p-10  min-h-[320px] sm:min-h-[360px] md:min-h-[400px] flex flex-col items-center justify-center text-center">
+              {card.type === "video" && (
+                <div className="w-full flex justify-center">
+                  <iframe
+                    src={card.videoUrl}
+                    title={card.title}
+                    className="w-full max-w-[600px] aspect-video "
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
 
-      <div className="flex flex-col md:flex-row md:space-x-6 overflow-hidden mt-8 gap-6 md:gap-0">
-        {visibleCards.map((card) => (
-          <div
-            key={card.id}
-            className="group flex-shrink-0 w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] bg-white rounded-lg transition-all duration-300 flex items-center justify-center"
-          >
-            {card.type === "video" && (
-              <iframe
-                className="w-full h-full rounded-lg"
-                src={card.videoUrl}
-                title={card.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            )}
-
-            {card.type === "text" && (
-              <div className="flex flex-col items-center justify-center p-4 sm:p-6 text-center h-full w-full">
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold mb-2 sm:mb-3">
-                  {card.name}
-                </h3>
-                <p className="text-[#5E5E5E] font-medium text-lg sm:text-xl md:text-2xl lg:text-4xl mb-3 sm:mb-5">
-                  {card.designation}
-                </p>
-                <p className="text-base sm:text-lg md:text-xl lg:text-[28px] font-medium leading-snug md:leading-[150%] max-w-lg">
-                  {card.description}
-                </p>
-                <button className="flex bg-[#0A3253] hover:bg-[#983232] cursor-pointer px-4 py-2 sm:px-6 sm:py-3 text-white rounded-full mt-4">
-                  <a
-                    href="#"
-                    target="_blank"
-                    className="flex items-center gap-2"
-                  >
-                    <span className="text-sm sm:text-base md:text-lg lg:text-[24px] font-bold">
-                      View Case Study
-                    </span>
+              {card.type === "text" && (
+                <div className="flex flex-col items-center justify-center h-full">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl text-white font-bold mb-2">
+                    {card.name}
+                  </h3>
+                  <p className="text-white/75 text-base sm:text-lg md:text-xl mb-4">
+                    {card.designation}
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg text-white max-w-lg leading-relaxed">
+                    {card.description}
+                  </p>
+                  <button className="flex items-center gap-2 mt-6 bg-[#0A3253] hover:bg-[#983232] text-white px-5 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base">
+                    <span className="font-semibold">View Case Study</span>
                     {card.icon}
-                  </a>
-                </button>
-              </div>
-            )}
+                  </button>
+                </div>
+              )}
 
-            {card.type === "svg" && (
-              <div className="flex flex-col items-center justify-center p-4 sm:p-6 h-full w-full text-center">
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold mb-3">
-                  {card.title}
-                </h3>
-                <p className="text-base sm:text-lg md:text-xl lg:text-[28px] font-medium leading-snug md:leading-[150%] max-w-lg">
-                  {card.description}
-                </p>
-              </div>
-            )}
-          </div>
+              {card.type === "svg" && (
+                <div className="flex flex-col items-center justify-center h-full">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl text-white font-bold mb-4">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg text-white max-w-lg leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              )}
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 }
@@ -938,11 +909,11 @@ function Faqs() {
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#E8E8E8] mb-6 sm:mb-8">
         Frequently Asked Questions
       </h2>
-      <div className="max-w-3xl w-full mx-auto text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl w-full mx-auto text-left">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="flex flex-col mb-4 sm:mb-6 py-4 px-3 sm:px-4 rounded-xl sm:rounded-2xl text-white bg-black/50 shadow-xl sm:shadow-2xl"
+            className="flex flex-col mb-4 sm:mb-1 py-4 px-3 sm:px-4 rounded-xl sm:rounded-2xl text-white bg-black/50 shadow-xl sm:shadow-2xl"
           >
             <p className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed">
               {faq.question}
@@ -976,7 +947,7 @@ function Projects() {
         </h2>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch mt-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch mt-16">
         <div className="relative w-full h-60 sm:h-80 md:h-auto rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/av-lab-3.png"
@@ -1010,7 +981,7 @@ function Projects() {
             </ul>
           </div>
 
-          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 sm:px-6 py-2 sm:py-3 rounded-[30px] bg-white text-base sm:text-lg md:text-xl lg:text-2xl text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
+          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 sm:px-6 py-2 sm:py-3 rounded-[30px] bg-white text-base sm:text-lg md:text-lg text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
             <span>Discover More About Us</span>
             <svg
               width="30"
@@ -1041,8 +1012,8 @@ function Partners() {
             Get a reliable partner that provides solutions for your success
           </h3>
 
-          <button className=" bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl md:text-2xl font-bold px-5 py-3 rounded-xl md:rounded-2xl mt-6 sm:mt-8 cursor-pointer transition">
-            Hire
+          <button className="w-fit bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl md:text-2xl font-bold px-5 py-3 rounded-xl md:rounded-2xl mt-6 sm:mt-8 cursor-pointer transition">
+            Hire Us
           </button>
         </div>
 
