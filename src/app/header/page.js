@@ -151,18 +151,18 @@ export default function Header() {
           >
             About
           </Link>
-          {/* <Link
+          <Link
             href="/services"
             className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Services
-          </Link> */}
-          {/* <Link
+          </Link>
+          <Link
             href="/blog"
             className="text-white text-[16px] font-bold hover:text-[#983232]"
           >
             Blog
-          </Link> */}
+          </Link>
           <Link
             href="/portfolio"
             className="text-white text-[16px] font-bold hover:text-[#983232]"
