@@ -10,17 +10,19 @@ export default function ContactUs() {
     </div>
   );
 }
+
 function Contacts() {
   const strategies = [
     "Expect a response from us within an hour",
     "We’ll sign an NDA if requested",
     "Access to dedicated product specialists",
   ];
+
   return (
-    <div className="py-48 px-24 w-full h-full items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
-      <div className="flex gap-4">
-        <div className="bg-[url('/management.png')] rounded-2xl shadow-lg p-8 w-full md:w-1/2 text-white flex flex-col gap-6">
-          <div className="flex justify-center gap-10">
+    <div className="px-6 md:px-24 py-16 md:py-48 w-full h-full flex items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
+        <div className="bg-[url('/management.png')] bg-cover bg-no-repeat rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2 text-white flex flex-col gap-6">
+          <div className="flex justify-center gap-6 md:gap-10 flex-wrap">
             <div className="flex flex-col items-center">
               <Image
                 src="/team-member.png"
@@ -45,7 +47,7 @@ function Contacts() {
             </div>
           </div>
 
-          <ul className="space-y-4 ">
+          <ul className="space-y-4 text-left">
             {strategies.map((item, idx) => (
               <li key={idx} className="flex items-start gap-3">
                 <Image
@@ -55,19 +57,21 @@ function Contacts() {
                   height={10}
                   className="mt-2"
                 />
-                <span className="text-white text-2xl font-bold tracking-[0] leading-[150%]">
+                <span className="text-white text-base md:text-lg font-semibold tracking-[0] leading-[150%]">
                   {item}
                 </span>
               </li>
             ))}
           </ul>
-          <div className="flex flex-col items-start gap-1">
-            <p className="text-xl font-medium text-white">Project Inquiries</p>
-            <div className="flex flex-col md:flex-row justify-between items-center gap-30 text-sm text-gray-300 mt-4">
-              <div className="flex items-center gap-4">
+
+          <div className="flex flex-col gap-4 mt-4 text-left">
+            <p className="text-lg md:text-xl font-medium text-white">
+              Project Inquiries
+            </p>
+            <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-sm text-gray-300">
+              <div className="flex items-center gap-3">
                 <svg
-                  width="34"
-                  height="24"
+                  className="w-5 h-5 md:w-6 md:h-6 "
                   viewBox="0 0 34 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,15 +88,13 @@ function Contacts() {
                     </clipPath>
                   </defs>
                 </svg>
-
-                <span className="text-xl font-semibold text-white">
+                <span className="text-base md:text-lg font-semibold text-white">
                   @unitfactor.org
                 </span>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <svg
-                  width="25"
-                  height="25"
+                  className="w-5 h-5 md:w-5 md:h-5"
                   viewBox="0 0 25 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +112,7 @@ function Contacts() {
                   </defs>
                 </svg>
 
-                <span className="text-xl font-semibold text-white">
+                <span className="text-base md:text-lg font-semibold text-white">
                   Book A Call
                 </span>
               </div>
@@ -118,8 +120,8 @@ function Contacts() {
           </div>
         </div>
 
-        <div className="bg-[url('/form.png')] bg-cover bg-no-repeat bg-center rounded-2xl shadow-lg p-8 w-full md:w-1/2">
-          <h2 className="text-[40px] text-left font-bold mb-6">
+        <div className="bg-[url('/form.png')] bg-cover bg-no-repeat bg-center rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2">
+          <h2 className="text-2xl md:text-3xl text-left font-bold mb-6">
             Tell us about your project
           </h2>
           <form className="space-y-5">
@@ -127,24 +129,24 @@ function Contacts() {
               <input
                 type="text"
                 placeholder="*Full Name"
-                className="flex-1 border-b-2 border-[#E8E8E8] outline-none p-2"
+                className="flex-1 border-b-2 border-[#E8E8E8] outline-none p-2 bg-transparent"
               />
               <input
                 type="email"
                 placeholder="*Corporate Email"
-                className="flex-1 border-b-2 border-[#E8E8E8] outline-none p-2"
+                className="flex-1 border-b-2 border-[#E8E8E8] outline-none p-2 bg-transparent"
               />
             </div>
 
             <textarea
               placeholder="*About Project"
-              className="w-full border-b-2 border-[#E8E8E8] outline-none p-2"
+              className="w-full border-b-2 border-[#E8E8E8] outline-none p-2 bg-transparent"
             />
 
             <div className="flex items-center gap-3 mt-6">
               <button
                 type="submit"
-                className="flex items-center  bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-2xl  text-3xl font-bold"
+                className="flex items-center bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-lg text-lg md:text-2xl font-bold"
               >
                 Hire Us
               </button>
@@ -155,6 +157,7 @@ function Contacts() {
     </div>
   );
 }
+
 function Faqs() {
   const faqs = [
     {
