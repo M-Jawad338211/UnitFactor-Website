@@ -4,7 +4,7 @@ import Image from "next/image";
 import "./app.css";
 import "./globals.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -27,14 +27,14 @@ export default function Home() {
 function Hiring() {
   return (
     <div
-      className="w-screen h-screen bg-cover bg-center pt-20 overflow-hidden "
+      className="w-screen h-screen bg-cover bg-center  overflow-hidden "
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      <div className="flex flex-col items-center justify-center h-full mt-10 sm:mt-20 px-4">
+      <div className="flex flex-col items-center justify-center h-full mt-0 sm:mt-10 px-4">
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-          <p className="text-lg sm:text-[20px] font-semibold text-white text-center">
+          <h1 className="text-lg sm:text-[20px] font-semibold text-white text-center">
             Web Development &amp; UI/UX Design
-          </p>
+          </h1>
           <div className="flex gap-2">
             {["SaaS", "Web 3.0", "AI"].map((label) => (
               <span
@@ -54,7 +54,7 @@ function Hiring() {
           </p>
 
           <a href="#" target="_blank">
-            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-lg sm:text-3xl font-bold px-5 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer">
+            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-lg sm:text-2xl font-bold px-5 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer">
               Hire Us
             </button>
           </a>
@@ -139,10 +139,10 @@ function Solutions() {
 
   return (
     <div className="flex flex-col px-4 sm:px-12 lg:px-28 py-12 sm:py-20 lg:py-28 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <p className="text-3xl sm:text-5xl lg:text-[64px] text-left font-normal text-white mb-4">
+      <p className="text-2xl md:text-5xl text-left font-normal font-designer text-white mb-4">
         OUR SOLUTION
       </p>
-      <p className="text-base  md:text-2xl font-medium text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl leading-relaxed">
+      <p className="text-base  md:text-xl font-normal text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl leading-relaxed">
         We offer a wide range of digital services designed to elevate your
         business. From custom website development to complete IT solutions, our
         team delivers innovative, scalable, and results-driven products tailored
@@ -941,7 +941,7 @@ function Projects() {
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#E8E8E8]">
           170+ Successful Projects
         </p>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-[#E8E8E8] mt-2">
+        <h2 className="text-2xl  md:text-4xl font-bold leading-snug text-[#E8E8E8] mt-2">
           Our custom approach leads <br className="hidden sm:block" />
           projects to success
         </h2>
@@ -959,7 +959,7 @@ function Projects() {
 
         <div className="w-full h-auto bg-[url('/checks-bg.png')] bg-no-repeat bg-center bg-cover p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 flex flex-col justify-between">
           <div className="space-y-6">
-            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-left text-[#E8E8E8] font-bold leading-[150%]">
+            <h3 className="text-xl  md:text-3xl text-left text-[#E8E8E8] font-bold leading-[150%]">
               Unitfactor is your perfect choice in terms of:
             </h3>
 

@@ -19,7 +19,7 @@ function Contacts() {
   ];
 
   return (
-    <div className="px-6 md:px-24 py-16 md:py-48 w-full h-full flex items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
+    <div className="px-6 md:px-24 py-28 md:py-48 w-full h-full flex items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
         <div className="bg-[url('/management.png')] bg-cover bg-no-repeat rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2 text-white flex flex-col gap-6">
           <div className="flex justify-center gap-6 md:gap-10 flex-wrap">
