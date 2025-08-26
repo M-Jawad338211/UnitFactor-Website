@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function ContactUs() {
   return (
@@ -86,7 +85,7 @@ function Contacts() {
                   </defs>
                 </svg>
 
-                <span className="text-2xl font-semibold text-white">
+                <span className="text-xl font-semibold text-white">
                   @unitfactor.org
                 </span>
               </div>
@@ -111,7 +110,7 @@ function Contacts() {
                   </defs>
                 </svg>
 
-                <span className="text-2xl font-semibold text-white">
+                <span className="text-xl font-semibold text-white">
                   Book A Call
                 </span>
               </div>
