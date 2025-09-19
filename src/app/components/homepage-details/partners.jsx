@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Partners() {
   return (
     <div className="px-6 sm:px-12 md:px-24 py-16 w-full h-full items-center justify-center text-center bg-black">
-      <div className="max-w-7xl p-6 sm:p-10 mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mt-10">
+      <div className="w-full p-6 sm:p-10 mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mt-10">
         <div className="w-full h-auto space-y-6 flex flex-col items-center md:items-start justify-center md:justify-between text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl md:text-xl lg:text-3xl xl:text-4xl text-white font-bold leading-snug sm:leading-[140%] tracking-normal ">
             Get a reliable partner that provides solutions for your success

@@ -18,33 +18,34 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch mt-16">
-        <div className="relative w-full h-60 md:h-140 lg:h-auto rounded-2xl overflow-hidden shadow-lg">
+      <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch mt-16">
+        <div className="relative w-full  rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/av-lab-3.png"
             alt="Project Showcase"
-            fill
+            width={1129}
+            height={719}
             className="object-cover rounded-2xl"
           />
         </div>
 
-        <div className="w-full h-auto bg-[url('/checks-bg.png')] bg-no-repeat bg-center bg-cover p-6 sm:p-8 rounded-2xl shadow-lg space-y-6 flex flex-col justify-between">
-          <div className="space-y-6">
-            <h3 className="text-xl  md:text-3xl text-left text-[#E8E8E8] font-bold leading-[150%]">
+        <div className="w-full h-auto bg-[url('/checks-bg.png')] bg-no-repeat bg-center bg-cover p-6 md:p-16 rounded-2xl shadow-lg space-y-6 flex flex-col justify-between">
+          <div className="space-y-16">
+            <h3 className="text-xl  md:text-3xl xl:text-[40px] text-left text-[#E8E8E8] font-bold leading-[150%] max-w-2xl">
               Unitfactor is your perfect choice in terms of:
             </h3>
 
-            <ul className="space-y-3 sm:space-y-4">
+            <ul className="space-y-3 sm:space-y-8">
               {strategies.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 sm:gap-3">
+                <li key={idx} className="flex items-start gap-2 sm:gap-5">
                   <Image
                     src={"/check.png"}
                     alt="Check Icon"
-                    width={16}
-                    height={16}
-                    className="mt-1"
+                    width={20}
+                    height={17}
+                    className="mt-3"
                   />
-                  <span className="text-sm sm:text-base md:text-lg text-[#E8E8E8] font-medium leading-relaxed">
+                  <span className="text-sm sm:text-base md:text-lg lg:text-[32px] text-[#E8E8E8] font-medium leading-[150%]">
                     {item}
                   </span>
                 </li>
@@ -52,11 +53,11 @@ export default function Projects() {
             </ul>
           </div>
 
-          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 sm:px-6 py-2 sm:py-3 rounded-[30px] bg-white text-base sm:text-lg md:text-lg text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
+          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 sm:px-8 py-2 sm:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
             <span>Discover More About Us</span>
             <svg
-              width="30"
-              height="16"
+              width="46"
+              height="22"
               viewBox="0 0 46 22"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

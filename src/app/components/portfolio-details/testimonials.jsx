@@ -1,0 +1,101 @@
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
+
+export default function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const cards = [
+    {
+      id: 1,
+      name: "Ola Matafor",
+      role: "Vice President at WordPress",
+      text: `"Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever the next request was. Terrific job and we couldn’t have done it without you."`,
+      image: "/team-member.png",
+    },
+    {
+      id: 2,
+      name: "John Doe",
+      role: "CEO at Voxe",
+      text: `"Amazing collaboration! The team is skilled and professional. Terrific job and we couldn’t have done it without you."`,
+      image: "/team-member.png",
+    },
+  ];
+  const visibleCards = cards.slice(currentIndex, currentIndex + 1);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % cards.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
+  };
+
+  return (
+    <section className="w-full bg-[url('/checks-bg.png')] bg-cover bg-no-repeat bg-center py-12 px-4 md:px-18 xl:px-32">
+      <div className="w-full mx-auto flex flex-col gap-8">
+        <h2 className="text-white text-xl  lg:text-4xl max-w-xs md:max-w-xl font-bold leading-tight text-center md:text-left">
+          Our Partners find numerous reasons to Love Us
+        </h2>
+
+        <div className="flex flex-col md:flex-row justify-between gap-6">
+          <div className="flex flex-col gap-4 w-full md:w-1/3">
+            <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base md:text-2xl font-bold">
+              WordPress.com
+            </div>
+            <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base md:text-2xl font-bold">
+              VOXE
+            </div>
+            <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base md:text-2xl font-bold">
+              MYSO Finance
+            </div>
+          </div>
+
+          <div className="bg-[#FFC192] rounded-2xl px-6 py-10 md:p-6 shadow-lg w-full md:w-2/3 flex items-center justify-center">
+            {visibleCards.map((card) => (
+              <div
+                key={card.id}
+                className="flex flex-col md:flex-row gap-6 items-start w-full max-w-[600px] h-[400px] md:h-[350px]"
+              >
+                <Image
+                  src={card.image}
+                  alt={card.name}
+                  width={120}
+                  height={120}
+                  className="rounded-xl object-cover mx-auto md:mx-0"
+                />
+
+                <div className="flex flex-col justify-between h-full w-full">
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+                      {card.name}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-600">
+                      {card.role}
+                    </p>
+                    <p className="text-black text-lg sm:text-xl leading-relaxed font-medium mt-3 line-clamp-6">
+                      {card.text}
+                    </p>
+                  </div>
+                  <div className="flex justify-end gap-3 md:mt-6">
+                    <button
+                      onClick={prevSlide}
+                      className="p-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+                    >
+                      <ArrowLeft size={20} />
+                    </button>
+                    <button
+                      onClick={nextSlide}
+                      className="p-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+                    >
+                      <ArrowRight size={20} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

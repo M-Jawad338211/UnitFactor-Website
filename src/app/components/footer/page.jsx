@@ -29,10 +29,9 @@ export default function Footer() {
   ];
 
   return (
-    <div className="w-full bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover px-6 sm:px-12 lg:px-24 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 text-center">
-        {/* Logo + Info */}
-        <div className="flex flex-col items-center md:items-start gap-10">
+    <div className="w-full bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover  lg:px-20 xl:px-32 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-20 text-center">
+        <div className="flex flex-col items-center lg:items-start gap-10">
           <Link href="/">
             <svg
               width="350"
@@ -40,7 +39,7 @@ export default function Footer() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-36 h-auto md:w-[280px] md:h-[69px]"
+              className="w-40 h-auto md:w-[200px] md:h-[57px] lg:w-[220px] lg:h-[59px] 3xl:w-[350px] 3xl:h-[89px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
@@ -159,7 +158,7 @@ export default function Footer() {
               </defs>
             </svg>
           </Link>
-          <div className=" text-center md:text-left text-[#E8E8E8]">
+          <div className=" text-center lg:text-left text-[#E8E8E8]">
             <h3 className="text-lg sm:text-xl font-bold">Office</h3>
             <p className="text-base sm:text-lg font-medium mt-2">
               Ravi Block, Iqbal Town
@@ -177,7 +176,7 @@ export default function Footer() {
 
         {/* Strategy */}
         <div className="mt-4">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Strategy Services
           </h3>
           <div className="mt-4 space-y-2">
@@ -194,7 +193,7 @@ export default function Footer() {
 
         {/* Development */}
         <div className="mt-4">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Development Services
           </h3>
           <div className="mt-4 space-y-2">
@@ -211,7 +210,7 @@ export default function Footer() {
 
         {/* Designing */}
         <div className="mt-4">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#E8E8E8]">
+          <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Designing Services
           </h3>
           <div className="mt-4 space-y-2">
