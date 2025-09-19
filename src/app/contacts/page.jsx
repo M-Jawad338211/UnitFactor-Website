@@ -43,11 +43,11 @@ function Contacts() {
                 className="rounded-full"
               />
               <p className="mt-2 font-semibold">Hammad Ahmad</p>
-              <p className="text-sm text-gray-300">Manager</p>
+              <p className="text-sm text-gray-300">CFO</p>
             </div>
           </div>
 
-          <ul className="space-y-4 text-left">
+          <ul className="space-y-2 text-left">
             {strategies.map((item, idx) => (
               <li key={idx} className="flex items-start gap-3">
                 <Image
@@ -194,7 +194,7 @@ function Faqs() {
 
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/Rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#E8E8E8] mb-6 sm:mb-8">
+      <h2 className="text-2xl  md:text-3xl font-bold text-[#E8E8E8] mb-6 sm:mb-8">
         Frequently Asked Questions
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl w-full mx-auto text-left">

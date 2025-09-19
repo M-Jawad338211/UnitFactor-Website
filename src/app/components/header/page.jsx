@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Search, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function Header() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-32 h-auto md:w-[280px] md:h-[69px]"
+              className="w-32 h-auto md:w-[200px] md:h-[57px] lg:w-[280px] lg:h-[69px] xl:w-[350px] xl:h-[89px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
@@ -138,7 +138,7 @@ export default function Header() {
           </Link>
         </div>
 
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden lg:flex space-x-8 xl:space-x-16">
           <Link
             href="/"
             className="text-white text-[16px] font-bold hover:text-[#983232]"
@@ -180,13 +180,13 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <Link
             href="/contact"
-            className="hidden md:inline bg-white hover:bg-[#983232] text-[#0A3253] hover:text-white font-bold px-4 py-2 rounded-[40px]"
+            className="hidden lg:inline bg-white hover:bg-[#983232] text-[#0A3253] hover:text-white font-bold px-4 py-2 rounded-[40px]"
           >
             Contact Us
           </Link>
 
           <button
-            className="md:hidden text-white"
+            className="lg:hidden text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -195,7 +195,7 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#0A3253] px-6 py-6 space-y-4 flex flex-col">
+        <div className="lg:hidden bg-[#0A3253] px-6 py-6 space-y-4 flex flex-col">
           <Link
             href="/"
             className="text-white font-bold hover:text-[#983232]"
