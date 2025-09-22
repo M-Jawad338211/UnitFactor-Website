@@ -303,7 +303,7 @@ export default function Experiences() {
   ];
   return (
     <div className="flex flex-col px-4 py-10 md:p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-2xl md:text-5xl font-normal text-white max-w-xl leading-tight tracking-[0]">
+      <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-white max-w-xl leading-tight tracking-[0]">
         We have extensive industry experiences
       </h2>
       <p className="text-base md:text-xl font-normal leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
@@ -322,7 +322,7 @@ export default function Experiences() {
                 {service.icon}
               </div>
               <div className="flex flex-col items-start gap-3 max-w-[70%]">
-                <h2 className="text-xl md:text-[32px] font-bold text-[#983232] flex items-center gap-2 group-hover:text-white">
+                <h2 className="text-xl lg:text-[28px] xl:text-[32px] font-bold text-[#983232] flex items-center gap-2 group-hover:text-white">
                   {service.title}
                 </h2>
                 <div className="flex flex-wrap gap-2">

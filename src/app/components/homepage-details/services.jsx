@@ -128,9 +128,9 @@ export default function Services() {
   if (activeCategory === "Web Development") activeServices = development;
 
   return (
-    <div className="px-6 sm:px-12 lg:px-24 py-12 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+    <div className="px-6 sm:px-12 lg:px-28 py-12 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-[#E8E8E8] text-2xl md:text-5xl font-normal">
+        <h2 className="text-[#E8E8E8] text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal">
           Our Services
         </h2>
         <p className="text-[#E8E8E8] text-base md:text-xl font-normal max-w-xl sm:max-w-3xl mt-4">
