@@ -33,7 +33,7 @@ export default function Faqs() {
   ];
 
   return (
-    <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/Rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+    <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <h2 className="text-xl  md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#E8E8E8] mb-6 sm:mb-8">
         Frequently Asked Questions
       </h2>
