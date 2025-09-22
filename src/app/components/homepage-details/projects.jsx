@@ -43,9 +43,9 @@ export default function Projects() {
                     alt="Check Icon"
                     width={20}
                     height={17}
-                    className="mt-1 xl:mt-2 2xl:mt-3 w-4 h-4 xl:w-5 xl:h-4"
+                    className="mt-1 xl:mt-2 2xl:mt-3 md:w-[26px] md:h-[26px]"
                   />
-                  <span className="text-sm sm:text-base  xl:text-2xl 2xl:text-[32px] text-[#E8E8E8] font-medium leading-[150%]">
+                  <span className="text-lg md:text-xl  xl:text-2xl 2xl:text-[32px] text-[#E8E8E8] font-medium leading-[150%]">
                     {item}
                   </span>
                 </li>

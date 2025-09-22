@@ -5,7 +5,7 @@ export default function Team() {
     <div
       className="flex w-full h-full items-center justify-center text-center 
       bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover 
-      p-6 sm:p-12 md:p-16 lg:p-24"
+      p-6 sm:p-12 md:p-16 lg:p-28"
     >
       <Image
         src="/Mask-group.png"
