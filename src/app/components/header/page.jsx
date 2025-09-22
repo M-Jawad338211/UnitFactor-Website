@@ -37,7 +37,7 @@ export default function Header() {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="w-full mx-auto px-4 md:px-12 lg:px-16  xl:px-28 py-5 flex items-center justify-between">
+      <div className="w-full max-w-9xl mx-auto px-4 md:px-12 lg:px-16  xl:px-28 py-5 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="block">
             <svg

@@ -14,7 +14,7 @@ import CardCarousel from "./components/homepage-details/carousel";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden max-w-9xl mx-auto">
       <Hiring />
       <Solutions />
       <Experiences />

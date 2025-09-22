@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="w-full bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover  lg:px-20 xl:px-32 py-12">
+    <div className="w-full max-w-9xl mx-auto bg-[url('/footer-bg.png')] bg-no-repeat bg-center bg-cover  lg:px-20 xl:px-32 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-20 text-center">
         <div className="flex flex-col items-center lg:items-start gap-10">
           <Link href="/">

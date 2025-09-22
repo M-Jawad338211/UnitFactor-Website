@@ -1,10 +1,10 @@
 export default function Hiring() {
   return (
     <div
-      className="w-screen h-screen bg-cover bg-center  overflow-hidden "
+      className="w-full h-screen bg-cover bg-center  overflow-hidden "
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      <div className="flex flex-col items-center justify-center h-full mt-0 md:mt-10 px-4 sm:px-12 lg:px-16 xl:px-28">
+      <div className="flex flex-col items-center justify-center h-full  mt-0 md:mt-10 px-4 sm:px-12 lg:px-16 xl:px-28">
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <h2 className="text-lg sm:text-[20px] font-semibold text-white text-center">
             Web Development &amp; UI/UX Design

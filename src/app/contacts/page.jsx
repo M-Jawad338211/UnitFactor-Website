@@ -4,7 +4,7 @@ import Partners from "../components/contacts-details/projects";
 
 export default function ContactUs() {
   return (
-    <div>
+    <div className="max-w-9xl mx-auto">
       <Contacts />
       <Faqs />
       <Partners />

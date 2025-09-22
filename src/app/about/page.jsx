@@ -5,7 +5,7 @@ import Team from "../components/about-details/teams";
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="max-w-9xl mx-auto">
       <Talents />
       <Team />
       <Recognitions />

@@ -6,7 +6,7 @@ import ServicesAccordion from "../components/portfolio-details/services-accordio
 import Testimonials from "../components/portfolio-details/testimonials";
 export default function Portfolio() {
   return (
-    <div>
+    <div className="max-w-9xl mx-auto">
       <Partners />
       <ServicesAccordion />
       <Testimonials />
