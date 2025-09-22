@@ -39,7 +39,7 @@ export default function Footer() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-40 h-auto md:w-[200px] md:h-[57px] lg:w-[220px] lg:h-[59px] 3xl:w-[350px] 3xl:h-[89px]"
+              className="w-40 h-auto md:w-[200px] md:h-[57px] lg:w-[220px] lg:h-[59px] 2xl:w-[350px] 2xl:h-[89px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
