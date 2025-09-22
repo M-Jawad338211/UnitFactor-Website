@@ -57,13 +57,13 @@ professionally and on time`,
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className="p-4 sm:p-6 md:p-10  min-h-[320px] sm:min-h-[360px] md:min-h-[400px] flex flex-col items-center justify-center text-center">
+            <div className="p-4 sm:p-6 md:p-10 w-full  min-h-[320px] sm:min-h-[360px] md:min-h-[400px] flex items-center justify-center text-center">
               {card.type === "video" && (
                 <div className="w-full flex justify-center">
                   <iframe
                     src={card.videoUrl}
                     title={card.title}
-                    className="w-full max-w-[600px] aspect-video "
+                    className="w-full max-w-[600px] lg:max-w-[800px]  aspect-video "
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>

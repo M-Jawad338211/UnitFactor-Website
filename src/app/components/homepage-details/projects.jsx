@@ -25,7 +25,7 @@ export default function Projects() {
             alt="Project Showcase"
             width={746}
             height={651}
-            className="object-cover rounded-2xl lg:h-[390px] xl:w-[746px] xl:h-[651px]"
+            className="object-cover rounded-2xl lg:h-[390px] xl:w-[826px] xl:h-[751px]"
           />
         </div>
 
