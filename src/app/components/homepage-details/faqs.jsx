@@ -43,10 +43,10 @@ export default function Faqs() {
             key={index}
             className="flex flex-col mb-4 sm:mb-1 py-4 px-3 sm:px-4 rounded-xl sm:rounded-2xl text-white bg-black/50 shadow-xl sm:shadow-2xl"
           >
-            <p className="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl xl:text-[32px] font-medium leading-relaxed xl:leading-[150%]">
               {faq.question}
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-white mt-2">
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl text-white mt-2">
               {faq.answer}
             </p>
           </div>

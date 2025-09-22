@@ -111,7 +111,7 @@ export default function Services() {
     },
     {
       stack: "Landing Page",
-      technology: "HTML, CSS, JavaScript",
+      technology: "HTML, CSS,Tailwind, JavaScript",
       icon: (
         <img
           src="./vector.png"
