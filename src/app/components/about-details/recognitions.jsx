@@ -22,7 +22,7 @@ export default function Recognitions() {
             alt="Project Showcase"
             width={746}
             height={651}
-            className="object-cover rounded-2xl lg:h-[390px] xl:w-[896px] xl:h-[651px]"
+            className="object-cover rounded-2xl lg:h-[390px] xl:w-[896px] xl:h-[751px]"
           />
         </div>
 
@@ -42,7 +42,7 @@ export default function Recognitions() {
                     height={17}
                     className="mt-1 xl:mt-2 2xl:mt-3 md:w-[26px] md:h-[26px] "
                   />
-                  <span className="text-base md:text-xl  xl:text-2xl 2xl:text-[32px] text-[#E8E8E8] font-medium leading-[150%]">
+                  <span className="text-base md:text-xl  xl:text-2xl 2xl:text-[32px] text-[#E8E8E8] font-medium max-w-[250px] md:max-w-3xl leading-[120%] md:leading-[150%] text-left">
                     {item}
                   </span>
                 </li>

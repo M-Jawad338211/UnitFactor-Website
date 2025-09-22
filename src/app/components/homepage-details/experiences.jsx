@@ -25,7 +25,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden md:block text-[#983232] group-hover:text-white mt-2"
+            className=" text-[#983232] group-hover:text-white  mt-1 lg:mt-2 w-[36px] h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -88,7 +88,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden md:block text-[#983232] group-hover:text-white mt-2"
+            className=" text-[#983232] group-hover:text-white  mt-1 lg:mt-2 w-[36px] h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -147,7 +147,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden md:block text-[#983232] group-hover:text-white mt-2"
+            className="text-[#983232] group-hover:text-white  mt-1 lg:mt-2 [36px] h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -210,7 +210,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden md:block text-[983232] group-hover:text-white mt-2"
+            className="text-[983232] group-hover:text-white  mt-1 lg:mt-2 w-[36px] h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -277,7 +277,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="hidden md:block text-[#983232] group-hover:text-white mt-2"
+            className=" text-[#983232] group-hover:text-white mt-1 lg:mt-2 [36px] h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path

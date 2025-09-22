@@ -141,37 +141,37 @@ export default function Header() {
         <nav className="hidden lg:flex space-x-8 xl:space-x-16">
           <Link
             href="/"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             Services
           </Link>
           <Link
             href="/blog"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             Blog
           </Link>
           <Link
             href="/portfolio"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             Portfolio
           </Link>
           <Link
             href="/contacts"
-            className="text-white text-[16px] font-bold hover:text-[#983232]"
+            className="text-white text-lg font-bold hover:text-[#983232]"
           >
             Contacts
           </Link>

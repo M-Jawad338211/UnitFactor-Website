@@ -8,8 +8,8 @@ export default function Contacts() {
   ];
 
   return (
-    <div className="px-6 md:px-24 py-28 md:py-48 w-full h-full flex items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
-      <div className="flex flex-col lg:flex-row gap-8 w-full max-w-7xl">
+    <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-28 md:py-48 w-full h-full flex items-center justify-center text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="flex flex-col lg:flex-row gap-8 w-full ">
         <div className="bg-[url('/management.png')] bg-cover bg-no-repeat rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2 text-white flex flex-col gap-6">
           <div className="flex justify-center gap-6 md:gap-10 flex-wrap">
             <div className="flex flex-col items-center">
@@ -20,8 +20,10 @@ export default function Contacts() {
                 height={70}
                 className="rounded-full"
               />
-              <p className="mt-2 font-semibold">Jawad Ahmad</p>
-              <p className="text-sm text-gray-300">CEO</p>
+              <p className="mt-2 text-xl xl:text-2xl 2xl:text-3xl font-bold">
+                Jawad Ahmad
+              </p>
+              <p className="text-base lg:text-xl text-gray-300">CEO</p>
             </div>
             <div className="flex flex-col items-center">
               <Image
@@ -31,8 +33,10 @@ export default function Contacts() {
                 height={70}
                 className="rounded-full"
               />
-              <p className="mt-2 font-semibold">Hammad Ahmad</p>
-              <p className="text-sm text-gray-300">CFO</p>
+              <p className="mt-2 text-xl xl:text-2xl 2xl:text-3xl font-bold">
+                Hammad Ahmad
+              </p>
+              <p className="text-base lg:text-xl text-gray-300">CFO</p>
             </div>
           </div>
 
@@ -42,11 +46,11 @@ export default function Contacts() {
                 <Image
                   src={"/check.png"}
                   alt="Check Icon"
-                  width={15}
-                  height={10}
-                  className="mt-2"
+                  width={26}
+                  height={26}
+                  className="lg:mt-3 w-[20] h-[20px] lg:w-[26px] lg:h-[26px]"
                 />
-                <span className="text-white text-base md:text-lg font-semibold tracking-[0] leading-[150%]">
+                <span className="text-white text-base md:text-lg lg:text-2xl xl:text-[28px] 2xl:text-[32px] font-semibold tracking-[0] leading-[120%] xl:leading-[150%] max-w-[200px] md:max-w-xs xl:max-w-2xl">
                   {item}
                 </span>
               </li>
@@ -77,7 +81,7 @@ export default function Contacts() {
                     </clipPath>
                   </defs>
                 </svg>
-                <span className="text-base md:text-lg font-semibold text-white">
+                <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
                   @unitfactor.org
                 </span>
               </div>
@@ -101,7 +105,7 @@ export default function Contacts() {
                   </defs>
                 </svg>
 
-                <span className="text-base md:text-lg font-semibold text-white">
+                <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
                   Book A Call
                 </span>
               </div>
@@ -110,7 +114,7 @@ export default function Contacts() {
         </div>
 
         <div className="bg-[url('/form.png')] bg-cover bg-no-repeat bg-center rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2">
-          <h2 className="text-2xl md:text-3xl text-left font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-left font-bold mb-6">
             Tell us about your project
           </h2>
           <form className="space-y-5">
