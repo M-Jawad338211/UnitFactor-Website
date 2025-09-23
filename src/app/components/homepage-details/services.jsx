@@ -45,7 +45,7 @@ export default function Services() {
       technology: "Wireframes, Prototypes, User Flows",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -56,7 +56,7 @@ export default function Services() {
       technology: "Logos, Color Palettes, Typography",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -67,7 +67,7 @@ export default function Services() {
       technology: "Mockups, Design Systems, Style Guides",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -81,7 +81,7 @@ export default function Services() {
       technology: "React JS, Next JS, Node JS, Express JS",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow1"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -92,7 +92,7 @@ export default function Services() {
       technology: "React Native, Flutter, iOS, Android",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -103,7 +103,7 @@ export default function Services() {
       technology: "CloudFormation, Terraform, Docker",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -114,7 +114,7 @@ export default function Services() {
       technology: "HTML, CSS,Tailwind, JavaScript",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
