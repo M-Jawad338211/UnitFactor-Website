@@ -1,6 +1,6 @@
 export default function Animation() {
   return (
-    <div className="flex flex-col w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-24">
+    <div className="flex flex-col w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-16 md:py-20 xl:py-28">
       <h2 className="text-2xl   md:text-5xl font-normal leading-snug md:leading-14 lg:leading-[150%] tracking-normal text-white max-w-sm md:max-w-lg ">
         Turning projects into trusting partnerships
       </h2>

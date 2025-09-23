@@ -1,8 +1,8 @@
 export default function Bookings() {
   return (
-    <div className="px-4 md:px-18 xl:px-32  py-16 w-full h-full  items-center justify-center text-center bg-black">
+    <div className="px-4 md:px-18 xl:px-32 2xl:px-28  py-12 md:py-16 lg:py-20 xl:py-20 w-full h-full  items-center justify-center text-center bg-black">
       <div
-        className="w-full mx-auto rounded-[30px] mt-10 p-6 md:p-10 
+        className="w-full mx-auto rounded-[30px] p-6 md:px-10 py-12  md:py-16 lg:py-20 xl:py-28
         bg-gradient-to-r from-[#983232]/90 via-[#000000]/80 to-[#0A3253]/90 backdrop-blur-md"
       >
         <div className="w-full h-auto space-y-6 flex flex-col justify-between">

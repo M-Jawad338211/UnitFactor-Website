@@ -60,23 +60,23 @@ export default function ServicesAccordion() {
   ];
 
   return (
-    <div className="px-6 sm:px-12 xl:px-32  py-16 xl:py-24 w-full h-full items-center justify-center text-center bg-[url('/cards.png')] bg-center bg-no-repeat bg-cover">
-      <div className="flex flex-col xl:flex-row justify-between gap-8 lg:gap-12">
-        <div className="flex flex-col items-center xl:items-start mt-6 md:mt-22">
-          <div className="bg-black border border-[#A7A7A7] text-white rounded-2xl p-4 sm:p-5 w-full sm:w-[320px]">
+    <div className="px-6 sm:px-12 xl:px-28  py-16 xl:py-24 w-full h-full items-center justify-center text-center bg-[url('/cards.png')] bg-center bg-no-repeat bg-cover">
+      <div className="flex flex-col xl:flex-row justify-between gap-8 2xl:gap-0  ">
+        <div className="flex flex-col items-center xl:items-start ">
+          <div className="bg-black border border-[#A7A7A7] text-white rounded-2xl p-4 sm:p-10 w-full sm:w-[320px]">
             <div className="flex justify-between items-center cursor-pointer">
               <h2 className="text-lg sm:text-xl font-semibold">Services</h2>
             </div>
 
             <div className="mt-4 flex flex-col gap-3">
-              <p className="bg-[#3D3D3D] text-lg sm:text-xl font-bold rounded-[20px] mt-6 px-4 py-2 text-center sm:text-left">
+              <p className="bg-[#3D3D3D] text-lg sm:text-xl xl:text-2xl font-bold rounded-[20px] mt-6 px-4 py-2 text-center sm:text-left">
                 All Services
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-3">
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    className={`px-3 sm:px-4 py-2 rounded-[20px] text-xs sm:text-sm font-bold ${
+                    className={`px-3 sm:px-4 py-2 rounded-[20px] text-xs sm:text-sm xl:text-2xl font-bold ${
                       index === 0 ? "bg-[#141414]" : "bg-[#1A1A1A]"
                     }`}
                   >
@@ -87,13 +87,13 @@ export default function ServicesAccordion() {
             </div>
           </div>
 
-          <button className="bg-[#0A3253] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg sm:text-xl md:text-2xl font-bold px-5 sm:px-6 py-2 sm:py-3 rounded-2xl mt-4 cursor-pointer">
+          <button className="bg-[#0A3253] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg sm:text-xl md:text-2xl xl:text-4xl font-bold px-5 sm:px-8 py-2 sm:py-4 rounded-2xl mt-6 cursor-pointer">
             Have a Project?
           </button>
         </div>
         <div className="flex-1 w-full">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center lg:text-left mb-6 lg:ml-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-white text-center lg:text-left mb-6 xl:mb-16 lg:ml-5">
               Works that Power Growth
             </h2>
 

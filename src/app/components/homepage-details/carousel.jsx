@@ -46,7 +46,7 @@ professionally and on time`,
   ];
 
   return (
-    <div className="w-full bg-[url('/main.png')] bg-cover bg-center mx-auto py-12 px-4 sm:px-6">
+    <div className="w-full bg-[url('/main.png')] bg-cover bg-center mx-auto py-12 md:py-20 xl:py-28 px-4 sm:px-6">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}

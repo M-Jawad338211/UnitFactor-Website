@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PortfolioPartners() {
   return (
-    <div className="px-4 md:px-6 xl:px-24  w-full h-full items-center justify-center text-center bg-[url('/portfolio-bg.png')] bg-center bg-no-repeat bg-cover pt-20 md:pt-40">
+    <div className="px-4 md:px-6 xl:px-24 2xl:px-16  w-full h-full items-center justify-center text-center bg-[url('/portfolio-bg.png')] bg-center bg-no-repeat bg-cover pt-20 md:pt-40">
       <div className=" w-full p-6 md:p-10 mx-auto rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12  items-stretch mt-6 md:mt-10">
         <div className="w-full  flex flex-col">
           <div className=" flex flex-col gap-8 xl:gap-6 2xl:gap-13 items-center md:items-start w-full">
@@ -10,7 +10,7 @@ export default function PortfolioPartners() {
               We transform Ideas into design Success Stories
             </h2>
 
-            <p className="bg-white rounded-[15px] px-4 py-2 sm:p-3 text-xl  lg:text-2xl xl:text-[40px] font-bold">
+            <p className="bg-white rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-[40px] font-bold">
               500+ Projects done
             </p>
 

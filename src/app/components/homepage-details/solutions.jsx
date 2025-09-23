@@ -72,7 +72,7 @@ export default function Solutions() {
   ];
 
   return (
-    <div className="flex flex-col px-4 sm:px-12 lg:px-16 xl:px-28 py-12 sm:py-20  lg:py-28 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+    <div className="flex flex-col px-4 sm:px-12 lg:px-16 xl:px-28 py-12 sm:py-20  lg:py-32 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-left font-normal font-designer text-white mb-4">
         OUR SOLUTION
       </h2>

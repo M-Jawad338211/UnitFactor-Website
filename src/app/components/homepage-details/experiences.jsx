@@ -302,11 +302,11 @@ export default function Experiences() {
     },
   ];
   return (
-    <div className="flex flex-col px-4 py-10 md:p-24 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-white max-w-xl leading-tight tracking-[0]">
+    <div className="flex flex-col px-4 py-10 md:p-20 xl:p-28 w-full h-full items-center justify-center text-center bg-[url('/main.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl  font-bold text-white max-w-lg leading-tight tracking-[0]">
         We have extensive industry experiences
       </h2>
-      <p className="text-base md:text-xl font-normal leading-[150%] tracking-[0} text-white max-w-6xl mt-4 ">
+      <p className="text-base md:text-xl xl:text-2xl font-medium leading-[150%] tracking-[0} text-white max-w-5xl mt-4 ">
         Our Team have completed projects in different niches. They know how to
         add business value and provide personalized design solutions for your
         digital product.
