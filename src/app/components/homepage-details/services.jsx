@@ -82,7 +82,7 @@ export default function Services() {
       icon: (
         <img
           src="./vector.png"
-          alt="arrow"
+          alt="arrow1"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
       ),
