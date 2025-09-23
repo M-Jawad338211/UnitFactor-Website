@@ -9,7 +9,7 @@ export default function Services() {
       technology: "Competitor Analysis, SWOT, Surveys",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -20,7 +20,7 @@ export default function Services() {
       technology: "Roadmapping, OKRs, Business Models",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
@@ -31,7 +31,7 @@ export default function Services() {
       technology: "MVP Planning, User Journey Mapping",
       icon: (
         <img
-          src="./vector.png"
+          src="./vector1.png"
           alt="arrow"
           className="hidden md:block w-6 h-3 sm:w-[42px] sm:h-[18px]"
         />
