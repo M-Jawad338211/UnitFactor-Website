@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Partners() {
   return (
-    <div className="px-6 sm:px-12 md:px-28 py-16 w-full h-full items-center justify-center text-center bg-black">
+    <div className="px-6 sm:px-12 md:px-28 pt-6 pb-10 lg:pt-12 lg:pb-20 xl:pt-16 xl:pb-24 w-full h-full items-center justify-center text-center bg-black">
       <div className="w-full p-6 sm:p-10 mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mt-10">
         <div className="w-full h-auto space-y-6 flex flex-col items-center lg:items-start justify-center lg:justify-between text-center lg:text-left">
           <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-semibold xl:font-bold leading-[100%] xl:leading-[140%] tracking-normal xl:max-w-2xl ">
