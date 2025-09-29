@@ -7,7 +7,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="px-4 sm:px-8 md:px-16 lg:px-28 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
+    <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex flex-col items-center">
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#E8E8E8]">
           170+ Successful Projects

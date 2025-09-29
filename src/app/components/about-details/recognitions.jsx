@@ -8,7 +8,7 @@ export default function Recognitions() {
   ];
 
   return (
-    <section className="px-6 sm:px-12 md:px-16 lg:px-28 py-12 md:py-16 lg:py-20 xl:py-28 w-full bg-[url('/recognition-bg.png')] bg-no-repeat bg-center bg-cover">
+    <section className="px-6 sm:px-12 md:px-16 lg:px-12 xl:px-28 py-12 md:py-16 lg:py-20 xl:py-28 w-full bg-[url('/recognition-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex items-center justify-center text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-4xl font-bold leading-snug text-[#E8E8E8]">
           Today Unitfactor stands on market-leading positions and is recognized

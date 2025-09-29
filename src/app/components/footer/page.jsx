@@ -175,7 +175,7 @@ export default function Footer() {
         </div>
 
         {/* Strategy */}
-        <div className="mt-6">
+        <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Strategy Services
           </h3>
@@ -192,7 +192,7 @@ export default function Footer() {
         </div>
 
         {/* Development */}
-        <div className="mt-6">
+        <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Development Services
           </h3>
@@ -209,7 +209,7 @@ export default function Footer() {
         </div>
 
         {/* Designing */}
-        <div className="mt-6">
+        <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Designing Services
           </h3>

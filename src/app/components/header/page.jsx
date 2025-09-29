@@ -37,7 +37,7 @@ export default function Header() {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="w-full max-w-9xl mx-auto px-4 md:px-12 lg:px-16  xl:px-28 py-5 flex items-center justify-between">
+      <div className="w-full max-w-9xl mx-auto px-4 md:px-12   xl:px-28 py-5 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="block">
             <svg
@@ -46,7 +46,7 @@ export default function Header() {
               viewBox="0 0 350 89"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-32 h-auto md:w-[200px] md:h-[57px] lg:w-[280px] lg:h-[69px] xl:w-[350px] xl:h-[89px]"
+              className="w-32 h-auto md:w-[200px] md:h-[57px] lg:w-[260px] lg:h-[69px] xl:w-[350px] xl:h-[89px]"
             >
               <g clipPath="url(#clip0_1133_559)">
                 <path
