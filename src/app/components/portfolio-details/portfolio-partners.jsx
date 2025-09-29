@@ -33,7 +33,7 @@ export default function PortfolioPartners() {
             />
           </div>
 
-          <div className="flex flex-wrap justify-center items-center w-full 2xl:w-[86%] gap-2 lg:gap-10 xl:gap-16 bg-[#983232] rounded-2xl p-2 lg:p-4 ">
+          <div className="flex flex-wrap justify-center items-center w-full 2xl:w-[83%] gap-2 lg:gap-10 xl:gap-16 bg-[#983232] rounded-2xl p-2 lg:p-4 ">
             {["SaaS", "Web 3.0", "AI"].map((label) => (
               <span
                 key={label}
