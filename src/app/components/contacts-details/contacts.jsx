@@ -14,11 +14,11 @@ export default function Contacts() {
           <div className="flex justify-center gap-6 md:gap-10 md:flex-wrap">
             <div className="flex flex-col items-center">
               <Image
-                src="/team-member.png"
+                src="/jawad2.jpeg"
                 alt="members"
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full "
               />
               <p className="mt-2 text-xl xl:text-2xl 2xl:text-3xl font-bold">
                 Jawad Ahmad
@@ -27,7 +27,7 @@ export default function Contacts() {
             </div>
             <div className="flex flex-col items-center">
               <Image
-                src="/team-member.png"
+                src="/hammad.jpeg"
                 alt="member"
                 width={70}
                 height={70}
