@@ -7,16 +7,23 @@ export default function Testimonials() {
   const cards = [
     {
       id: 1,
-      name: "Ola Matafor",
-      role: "Vice President at WordPress",
-      text: `"Throughout the entire project all I saw was sheer will to keep pushing forward and adapting to whatever the next request was. Terrific job and we couldn’t have done it without you."`,
-      image: "/team-member.png",
+      name: "Shmaya Schwartz",
+      role: "Business Owner",
+      text: `"Working with Unitfactor was a great experience. They delivered 100% on our requirements with top-quality work in React.js and Next.js. The team ensured the code was optimized for performance, handled every challenge proactively, and kept communication clear and professional throughout."`,
+      image: "/shmaya.jpeg",
     },
     {
       id: 2,
-      name: "John Doe",
-      role: "CEO at Voxe",
-      text: `"Amazing collaboration! The team is skilled and professional. Terrific job and we couldn’t have done it without you."`,
+      name: "Justin Garner",
+      role: "CEO at OnlineMed",
+      text: `"Excellent experience working with Unitfactor. The team was very patient and professional throughout."`,
+      image: "/justin.jpeg",
+    },
+    {
+      id: 3,
+      name: "Daniel Mesecke",
+      role: "CEO at Natural Bathroom ",
+      text: `"Jawad and the UnitFactor team were excellent partners. Jawad led with strategic direction while his team provided strong technical execution and support. Even when he wasn’t directly available, the team was responsive, aligned, and reliable. Together they delivered a high-quality, global-ready platform and proved themselves as a dependable, professional tech partner."`,
       image: "/team-member.png",
     },
   ];
@@ -46,7 +53,7 @@ export default function Testimonials() {
               VOXE
             </div>
             <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base lg:text-2xl font-bold">
-              MYSO Finance
+              Web Development
             </div>
           </div>
 
@@ -61,7 +68,7 @@ export default function Testimonials() {
                   alt={card.name}
                   width={120}
                   height={120}
-                  className="rounded-xl object-cover mx-auto md:mx-0"
+                  className="rounded-full object-cover mx-auto md:mx-0"
                 />
 
                 <div className="flex flex-col justify-between h-full w-full">
