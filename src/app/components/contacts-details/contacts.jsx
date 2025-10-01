@@ -50,7 +50,7 @@ export default function Contacts() {
                   height={26}
                   className="lg:mt-3 w-[20] h-[20px] lg:w-[26px] lg:h-[26px]"
                 />
-                <span className="text-white text-base md:text-lg lg:text-2xl xl:text-[28px] 2xl:text-[32px] font-semibold tracking-[0] leading-[120%] xl:leading-[150%] max-w-[200px] md:max-w-xs xl:max-w-2xl">
+                <span className="text-white text-base md:text-lg lg:text-2xl xl:text-[28px]  font-semibold tracking-[0] leading-[120%] xl:leading-[150%] max-w-[200px] md:max-w-xs xl:max-w-2xl">
                   {item}
                 </span>
               </li>
