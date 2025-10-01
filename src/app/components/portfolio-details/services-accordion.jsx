@@ -5,57 +5,54 @@ export default function ServicesAccordion() {
     "MVP (12)",
     "UI/UX Design (12)",
     "Branding (5)",
-    "Web Development (78)",
-    "Website Design (77)",
+    "Web Development (21)",
+    "Website Design (18)",
   ];
   const works = [
     {
       id: 1,
-      title: "Environmental Ovulation",
+      title: "Hairrules",
       description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
+        "Built a clean, user-friendly e-commerce site for Hair Rules, with texture-based categorization, product listings, and virtual consultation features. Ensured intuitive navigation, branded layout, and responsive design to highlight their mission: ‘Love your texture",
+      tags: ["ReactJs", "Alpine.js", "jQuery"],
+      img: "/hairrules.jpg",
+      link: "https://hairrules.com",
     },
     {
       id: 2,
-      title: "Environmental Ovulation",
+      title: "Youdera",
       description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
+        "Developed Youdera’s platform for solar financing, enabling solar professionals to simulate PPA rates, submit projects, and get real-time approvals. Built a responsive site that presents project portfolios, partner onboarding, and energy transition messaging.",
+      tags: ["ReactJs", "NextJs", "Headless UI"],
+      img: "/youdera1.jpg",
+      link: "https://www.youdera.com/",
     },
     {
       id: 3,
-      title: "Environmental Ovulation",
+      title: "Iecl",
       description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
+        "We redesigned and maintained the IECL website to improve navigation, mobile responsiveness, and UI. We optimized access to ICF-accredited courses and integrated digital resources like blogs and podcasts to boost engagement and SEO. We implemented SEO practices and web analytics to improve visibility and ensured consistent branding across all platforms.",
+      tags: ["ReactJs", "NextJs", "Tailwind CSS"],
+      img: "/iecl.jpg",
+      link: "https://www.iecl.com/",
     },
     {
       id: 4,
-      title: "Environmental Ovulation",
+      title: "Travelstride",
       description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
+        "We redesigned and built the TravelStride site to deliver a smooth, immersive travel browsing experience—crafting a responsive UI, intuitive navigation, and showcases of destinations and packages. We integrated smooth booking workflows, vivid media displays, and SEO-driven content to boost engagement and discoverability",
+      tags: ["ReactJs", "NextJs", "Open Graph"],
+      img: "/travel-stride.jpg",
+      link: "https://www.travelstride.com/",
     },
     {
       id: 5,
-      title: "Environmental Ovulation",
+      title: "Arielle Music Shop",
       description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
-    },
-    {
-      id: 6,
-      title: "Environmental Ovulation",
-      description:
-        "Tell about environmental factors Tell about environmental factors Tell about environmental factors",
-      tags: ["SaaS", "Web 3.0", "AI"],
-      img: "/mockup.png",
+        "We redesigned the Arielle Music Shop platform to deliver a seamless shopping experience for musicians. The responsive UI features intuitive navigation, engaging product showcases, and secure checkout flows. Optimized with vivid media and SEO-driven content, the site boosts discoverability, engagement, and customer trust.",
+      tags: ["ReactJs", "Vue.Js", "Shopify"],
+      img: "/ariellie-site.jpg",
+      link: "https://arielle.store/",
     },
   ];
 
@@ -104,13 +101,19 @@ export default function ServicesAccordion() {
                   className="bg-transparent rounded-2xl p-4 sm:p-6 text-center text-white"
                 >
                   <div className="overflow-hidden rounded-2xl mb-4 sm:mb-6">
-                    <Image
-                      src={work.img}
-                      alt={work.title}
-                      width={450}
-                      height={300}
-                      className="rounded-xl w-full h-auto"
-                    />
+                    <a
+                      href={work.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={work.img}
+                        alt={work.title}
+                        width={450}
+                        height={300}
+                        className="rounded-xl w-full h-auto cursor-pointer hover:opacity-90 transition"
+                      />
+                    </a>
                   </div>
 
                   <h3 className="text-xl sm:text-2xl text-left font-bold mb-2">

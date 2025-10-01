@@ -8,7 +8,6 @@ export default function Members() {
     { src: "/ahsan.jpg", alt: "Member 4" },
     { src: "/awais1.jpg", alt: "Member 5" },
     { src: "/abdullah1.jpg", alt: "Member 6" },
-    { src: "/team-member7.png", alt: "Member 7" },
   ];
 
   return (

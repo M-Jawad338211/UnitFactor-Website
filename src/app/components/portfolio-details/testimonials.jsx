@@ -26,6 +26,13 @@ export default function Testimonials() {
       text: `"Jawad and the UnitFactor team were excellent partners. Jawad led with strategic direction while his team provided strong technical execution and support. Even when he wasn’t directly available, the team was responsive, aligned, and reliable. Together they delivered a high-quality, global-ready platform and proved themselves as a dependable, professional tech partner."`,
       image: "/team-member.png",
     },
+    {
+      id: 4,
+      name: "Scott MIchael",
+      role: "Business Owner",
+      text: `"Superb work!! Unitfactor really knows how to crack the code with ClickFunnels. HIGHLY recommended."`,
+      image: "/team-member.png",
+    },
   ];
   const visibleCards = cards.slice(currentIndex, currentIndex + 1);
 
@@ -47,13 +54,13 @@ export default function Testimonials() {
         <div className="flex flex-col md:flex-row justify-between gap-6">
           <div className="flex flex-col gap-4 w-full md:w-1/3">
             <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base lg:text-2xl font-bold">
-              WordPress.com
-            </div>
-            <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base lg:text-2xl font-bold">
-              VOXE
+              WordPress
             </div>
             <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base lg:text-2xl font-bold">
               Web Development
+            </div>
+            <div className="bg-[#983232]/50 p-4 rounded-xl text-center text-white text-base lg:text-2xl font-bold">
+              Graphic Designing
             </div>
           </div>
 
