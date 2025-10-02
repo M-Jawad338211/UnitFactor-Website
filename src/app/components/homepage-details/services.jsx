@@ -99,7 +99,7 @@ export default function Services() {
       ),
     },
     {
-      stack: "DevOps",
+      stack: "DevOps Solutions",
       technology: "CloudFormation, Terraform, Docker",
       icon: (
         <img
@@ -162,13 +162,13 @@ export default function Services() {
             key={index}
             className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0 mb-6"
           >
-            <span className="text-lg md:text-xl lg:text-3xl font-medium leading-[150%]">
+            <span className="text-lg md:text-xl lg:text-3xl font-medium leading-[150%] ">
               {service.stack}
             </span>
             <h4 className="text-base md:text-lg lg:text-2xl text-[#7E7E7E] font-medium leading-[150%]">
               {service.technology}
             </h4>
-            <span>{service.icon}</span>
+            <a href="/portfolio">{service.icon}</a>
           </div>
         ))}
       </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Experiences() {
   const services = [
     {
@@ -327,12 +329,13 @@ export default function Experiences() {
                 </h2>
                 <div className="flex flex-wrap gap-2">
                   {service.tags.map((tag, i) => (
-                    <span
+                    <Link
+                      href="/portfolio"
                       key={i}
                       className="px-3 py-1  border-2 rounded-full text-sm font-medium text-[#585858] group-hover:text-[#C7C7C7] "
                     >
                       {tag}
-                    </span>
+                    </Link>
                   ))}
                 </div>
               </div>

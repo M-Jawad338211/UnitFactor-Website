@@ -168,13 +168,16 @@ export default function Footer() {
           </div>
           <div className="text-left text-[#E8E8E8]">
             <h3 className="text-lg sm:text-xl font-bold">Drop us a line</h3>
-            <p className="text-base sm:text-lg font-medium mt-2">
-              @unitfactor.org
-            </p>
+
+            <a
+              href="mailto:hr@unitfactor.org"
+              className="text-base sm:text-lg font-medium mt-2"
+            >
+              hr@unitfactor.org
+            </a>
           </div>
         </div>
 
-        {/* Strategy */}
         <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Strategy Services
@@ -191,7 +194,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Development */}
         <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Development Services
@@ -208,7 +210,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Designing */}
         <div className="mt-4 2xl:mt-6">
           <h3 className="text-xl xl:text-2xl font-bold text-[#E8E8E8]">
             Designing Services

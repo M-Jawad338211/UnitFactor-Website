@@ -11,12 +11,13 @@ export default function Hiring() {
           </h2>
           <div className="flex gap-2">
             {["SaaS", "Web 3.0", "AI"].map((label) => (
-              <span
+              <a
+                href="/portfolio"
                 key={label}
                 className="border-2 border-white text-white font-semibold text-xs md:text-base px-3 sm:px-4 py-1 rounded-full"
               >
                 {label}
-              </span>
+              </a>
             ))}
           </div>
         </div>
