@@ -145,9 +145,9 @@ export default function Contacts() {
             <div className="flex items-center gap-3 mt-6">
               <button
                 type="submit"
-                className="flex items-center bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-lg text-lg md:text-2xl font-semibold"
+                className="flex items-center bg-white hover:bg-[#0A3253] text-[#983232] hover:text-white px-6 py-2 rounded-[15px] cursor-pointer shadow-lg text-lg md:text-2xl font-semibold active:scale-95 duration-150 ease-in-out"
               >
-                Hire Us
+                Submit
               </button>
             </div>
           </form>

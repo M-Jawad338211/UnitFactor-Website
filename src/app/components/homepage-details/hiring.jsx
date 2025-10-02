@@ -32,7 +32,7 @@ export default function Hiring() {
             target="_blank"
             className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253]
             hover:text-white text-lg md:text-2xl font-bold px-3 py-2 md:px-5
-            md:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer"
+            md:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer active:scale-95 duration-150 ease-in-out"
           >
             Hire Us
           </a>

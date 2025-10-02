@@ -16,10 +16,12 @@ export default function Talents() {
             digital products for people worldwide.
           </p>
 
-          <a href="#" target="_blank" className="mt-8">
-            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold px-6 py-3 cursor-pointer rounded-2xl transition-all">
-              Talk to our Experts
-            </button>
+          <a
+            href="/contacts"
+            target="_blank"
+            className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold px-6 py-3 cursor-pointer rounded-2xl transition-all mt-8 active:scale-95 duration-150 ease-in-out"
+          >
+            Talk to our Experts
           </a>
         </div>
       </div>

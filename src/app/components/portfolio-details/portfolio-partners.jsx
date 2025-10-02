@@ -17,9 +17,12 @@ export default function PortfolioPartners() {
 
             <div className="w-2/3 h-[1px] bg-white/75 mt-3 sm:mt-5"></div>
 
-            <span className="bg-[#983232] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg lg:text-2xl xl:text-4xl font-bold px-6 py-2 lg:px-6 lg:py-3 xl:px-6  xl:py-2 rounded-2xl mt-3 cursor-pointer">
+            <a
+              href="/portfolio"
+              className="bg-[#983232] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg lg:text-2xl xl:text-4xl font-bold px-6 py-2 lg:px-6 lg:py-3 xl:px-6  xl:py-2 rounded-2xl mt-3 cursor-pointer active:scale-95 duration-150 ease-in-out"
+            >
               All Cases
-            </span>
+            </a>
           </div>
         </div>
 

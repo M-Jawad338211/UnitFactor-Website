@@ -117,7 +117,7 @@ export default function Solutions() {
                   <a
                     href="/portfolio"
                     target="_blank"
-                    className="flex text-white group-hover:text-black font-bold duration-300"
+                    className="flex text-white group-hover:text-black font-bold active:scale-95 duration-150 ease-in-out"
                   >
                     {service.cta}
                   </a>

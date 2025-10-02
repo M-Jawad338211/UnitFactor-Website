@@ -84,9 +84,13 @@ export default function ServicesAccordion() {
             </div>
           </div>
 
-          <button className="bg-[#0A3253] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg sm:text-xl md:text-2xl xl:text-4xl font-bold px-5 sm:px-8 py-2 sm:py-4 rounded-2xl mt-6 cursor-pointer">
+          <a
+            href="/contacts"
+            target="_blank"
+            className="bg-[#0A3253] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg sm:text-xl md:text-2xl xl:text-4xl font-bold px-5 sm:px-8 py-2 sm:py-4 rounded-2xl mt-6 cursor-pointer"
+          >
             Have a Project?
-          </button>
+          </a>
         </div>
         <div className="flex-1 w-full">
           <div className="max-w-6xl mx-auto">

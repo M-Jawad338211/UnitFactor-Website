@@ -53,7 +53,7 @@ export default function Recognitions() {
           <a
             href="/portfolio"
             target="_blank"
-            className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto"
+            className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white active:scale-95 duration-150 ease-in-out w-auto"
           >
             <span>Discover More About Us</span>
             <svg
@@ -74,15 +74,15 @@ export default function Recognitions() {
       </div>
 
       <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-        <div className="bg-gradient-to-r from-[#2B2B2B] to-[#983232] hover:from-[#0A3253] hover:to-[#0A3253] rounded-[20px] flex items-center justify-center h-24 sm:h-[120px] w-full cursor-pointer px-4">
+        <div className="bg-gradient-to-r from-[#2B2B2B] to-[#983232]  rounded-[20px] flex items-center justify-center h-24 sm:h-[120px] w-full px-4">
           <p className="text-[#E8E8E8] font-bold text-xl md:text-2xl xl:text-4xl text-center">
             7+ Years In Business
           </p>
         </div>
 
-        <div className="group bg-white hover:bg-[#0A3253] rounded-[20px] flex items-center justify-center h-24 sm:h-[120px] w-full cursor-pointer px-4">
-          <p className="text-black group-hover:text-white font-bold text-xl md:text-2xl xl:text-4xl text-center">
-            170+ Successful Projects
+        <div className="group bg-white  rounded-[20px] flex items-center justify-center h-24 sm:h-[120px] w-full  px-4">
+          <p className="text-black  font-bold text-xl md:text-2xl xl:text-4xl text-center">
+            70+ Successful Projects
           </p>
         </div>
       </div>

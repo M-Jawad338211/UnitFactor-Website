@@ -11,7 +11,7 @@ export default function Partners() {
           <a
             href="/contacts"
             target="_blank"
-            className="w-fit bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl lg:text-2xl font-bold px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl mt-6 lg:mt-8 cursor-pointer transition"
+            className="w-fit bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl lg:text-2xl font-bold px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl mt-6 lg:mt-8 cursor-pointer active:scale-95 duration-150 ease-in-out"
           >
             Hire Us
           </a>
