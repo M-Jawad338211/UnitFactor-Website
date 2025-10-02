@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PortfolioPartners() {
   return (
@@ -10,15 +11,15 @@ export default function PortfolioPartners() {
               We transform Ideas into design Success Stories
             </h2>
 
-            <p className="bg-white rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-[40px] font-bold">
-              500+ Projects done
+            <p className="bg-white rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-4xl font-bold">
+              70+ Projects done
             </p>
 
             <div className="w-2/3 h-[1px] bg-white/75 mt-3 sm:mt-5"></div>
 
-            <button className="bg-[#983232] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg lg:text-2xl xl:text-[40px] font-bold px-6 py-2 lg:px-6 lg:py-3 xl:px-6  xl:py-2 rounded-2xl mt-3 cursor-pointer">
+            <span className="bg-[#983232] hover:bg-[#D9D9D9] text-white hover:text-[#983232] text-lg lg:text-2xl xl:text-4xl font-bold px-6 py-2 lg:px-6 lg:py-3 xl:px-6  xl:py-2 rounded-2xl mt-3 cursor-pointer">
               All Cases
-            </button>
+            </span>
           </div>
         </div>
 

@@ -114,9 +114,13 @@ export default function Solutions() {
                   {service.description}
                 </p>
                 <button className="bg-[#0A3253] group-hover:bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-2xl flex items-center justify-center gap-2 mx-auto cursor-pointer mt-auto">
-                  <span className="flex text-white group-hover:text-black font-bold duration-300">
+                  <a
+                    href="/portfolio"
+                    target="_blank"
+                    className="flex text-white group-hover:text-black font-bold duration-300"
+                  >
                     {service.cta}
-                  </span>
+                  </a>
                 </button>
               </div>
             </div>

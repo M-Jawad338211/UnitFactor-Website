@@ -27,10 +27,14 @@ export default function Hiring() {
             Build Trust, and Turn Visitors into Loyal Customers
           </h1>
 
-          <a href="#" target="_blank">
-            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253] hover:text-white text-lg md:text-2xl font-bold px-3 py-2 md:px-5  md:py-3  rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer">
-              Hire Us
-            </button>
+          <a
+            href="contacts"
+            target="_blank"
+            className="bg-[#D9D9D9] hover:bg-[#983232] text-[#0A3253]
+            hover:text-white text-lg md:text-2xl font-bold px-3 py-2 md:px-5
+            md:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer"
+          >
+            Hire Us
           </a>
         </div>
       </div>

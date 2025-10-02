@@ -81,9 +81,12 @@ export default function Contacts() {
                     </clipPath>
                   </defs>
                 </svg>
-                <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
+                <a
+                  href="mailto:hr@unitfactor.org"
+                  className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white"
+                >
                   @unitfactor.org
-                </span>
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <svg
@@ -105,9 +108,12 @@ export default function Contacts() {
                   </defs>
                 </svg>
 
-                <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
+                <a
+                  href="tel:03053333772"
+                  className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white"
+                >
                   Book A Call
-                </span>
+                </a>
               </div>
             </div>
           </div>

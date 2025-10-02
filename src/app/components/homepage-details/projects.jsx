@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Projects() {
   const strategies = [
     "Flexible collaboration & fixed monthly rate",
@@ -10,7 +11,7 @@ export default function Projects() {
     <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full text-center bg-[url('/project-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex flex-col items-center">
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#E8E8E8]">
-          170+ Successful Projects
+          70+ Successful Projects
         </p>
         <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight lg:leading-snug text-[#E8E8E8] mt-2">
           Our custom approach leads <br className="hidden sm:block" />
@@ -53,7 +54,11 @@ export default function Projects() {
             </ul>
           </div>
 
-          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
+          <Link
+            href="/portfolio"
+            target="_blank"
+            className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto"
+          >
             <span>Discover More About Us</span>
             <svg
               width="46"
@@ -68,7 +73,7 @@ export default function Projects() {
                 fill="currentColor"
               />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

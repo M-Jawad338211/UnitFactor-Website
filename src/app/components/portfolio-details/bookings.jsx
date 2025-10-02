@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Bookings() {
   return (
     <div className="px-4 md:px-18 xl:px-32 2xl:px-28  py-12 md:py-16 lg:py-20 xl:py-20 w-full h-full  items-center justify-center text-center bg-black">
@@ -17,12 +19,13 @@ export default function Bookings() {
               designers to cover your questions about our working process.
             </p>
 
-            <button
+            <Link
+              href="/contacts"
               className="bg-[#983232] hover:bg-[#0A3253] transition-colors duration-300 
               text-white text-base md:text-xl xl:text-[40px] font-bold px-6 py-3 rounded-2xl mt-6 cursor-pointer"
             >
               Book a free trial
-            </button>
+            </Link>
           </div>
         </div>
       </div>

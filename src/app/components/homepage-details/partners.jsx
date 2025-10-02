@@ -8,9 +8,13 @@ export default function Partners() {
             Get a reliable partner that provides solutions for your success
           </h2>
 
-          <button className="w-fit bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl lg:text-2xl font-bold px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl mt-6 lg:mt-8 cursor-pointer transition">
+          <a
+            href="/contacts"
+            target="_blank"
+            className="w-fit bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl lg:text-2xl font-bold px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-2xl mt-6 lg:mt-8 cursor-pointer transition"
+          >
             Hire Us
-          </button>
+          </a>
         </div>
 
         <div className="relative flex items-center justify-center w-full h-[250px] md:h-[430px] lg:h-[300px] xl:h-[500px] 2xl:h-[680px] lg:mt-8 ">

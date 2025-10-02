@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Partners() {
   return (
     <div className="px-4 sm:px-12 lg:px-16 xl:px-28 pt-6 pb-12 lg:pt-8 lg:pb-16 xl:pt-12 xl:pb-20 w-full items-center justify-center text-center bg-black">
@@ -8,9 +10,12 @@ export default function Partners() {
               Got a project in mind? Tell us about it.
             </h3>
 
-            <button className="bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[40px] font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer">
+            <a
+              href="tel:03053333772"
+              className="bg-[#D9D9D9] hover:bg-[#983232] text-[#983232] hover:text-white text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[40px] font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl mt-6 sm:mt-10 cursor-pointer"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </div>

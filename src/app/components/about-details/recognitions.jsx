@@ -50,7 +50,11 @@ export default function Recognitions() {
             </ul>
           </div>
 
-          <button className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto">
+          <a
+            href="/portfolio"
+            target="_blank"
+            className="group self-start flex items-center cursor-pointer mt-4 px-4 xl:px-8 py-2 xl:py-4 rounded-[30px] bg-white text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-[28px] text-[#0A3253] font-bold hover:bg-[#983232] hover:text-white transition w-auto"
+          >
             <span>Discover More About Us</span>
             <svg
               width="46"
@@ -65,7 +69,7 @@ export default function Recognitions() {
                 fill="currentColor"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
 
