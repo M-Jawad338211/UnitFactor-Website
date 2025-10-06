@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 export default function Recognitions() {
   const strategies = [
     "Flexible collaboration & fixed monthly rate",
@@ -10,10 +11,16 @@ export default function Recognitions() {
   return (
     <section className="px-6 sm:px-12 md:px-16 lg:px-12 xl:px-28 py-12 md:py-16 lg:py-20 xl:py-28 w-full bg-[url('/recognition-bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="flex items-center justify-center text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-4xl font-bold leading-snug text-[#E8E8E8]">
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-4xl font-bold leading-snug text-[#E8E8E8]"
+        >
           Today Unitfactor stands on market-leading positions and is recognized
           globally
-        </h2>
+        </motion.h2>
       </div>
       <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 items-stretch mt-16">
         <div className="relative w-full overflow-hidden ">

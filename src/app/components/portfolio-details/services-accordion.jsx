@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 export default function ServicesAccordion() {
   const services = [
     "MVP (12)",
@@ -94,9 +94,15 @@ export default function ServicesAccordion() {
         </div>
         <div className="flex-1 w-full">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-white text-center lg:text-left mb-6 xl:mb-16 lg:ml-5">
+            <motion.h2
+              initial={{ opacity: 0, y: -40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-white text-center lg:text-left mb-6 xl:mb-16 lg:ml-5"
+            >
               Works that Power Growth
-            </h2>
+            </motion.h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {works.map((work) => (

@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
@@ -47,9 +47,15 @@ export default function Testimonials() {
   return (
     <section className="w-full bg-[url('/new-choices.png')] bg-cover bg-no-repeat bg-center py-12 md:py-16 lg:py-20 xl:py-28 px-4 md:px-18 xl:px-32 2xl:px-28">
       <div className="w-full mx-auto flex flex-col gap-12 lg:gap-20">
-        <h2 className="text-white text-xl  lg:text-4xl max-w-xs md:max-w-xl font-bold leading-tight text-center md:text-left">
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-white text-xl  lg:text-4xl max-w-xs md:max-w-xl font-bold leading-tight text-center md:text-left"
+        >
           Our Partners find numerous reasons to Love Us
-        </h2>
+        </motion.h2>
 
         <div className="flex flex-col md:flex-row justify-between gap-6">
           <div className="flex flex-col gap-4 w-full md:w-1/3">

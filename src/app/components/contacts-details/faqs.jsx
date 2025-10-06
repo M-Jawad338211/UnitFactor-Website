@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 export default function Faqs() {
   const faqs = [
     {
@@ -34,9 +36,15 @@ export default function Faqs() {
 
   return (
     <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-12 md:py-16 lg:py-20 xl:py-28 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-xl  md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-[#E8E8E8] mb-6 sm:mb-16">
+      <motion.h2
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-xl  md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-[#E8E8E8] mb-6 sm:mb-16"
+      >
         Frequently Asked Questions
-      </h2>
+      </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4  w-full mx-auto text-left">
         {faqs.map((faq, index) => (
           <div

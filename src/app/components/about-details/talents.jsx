@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 export default function Talents() {
   return (
     <div
@@ -6,9 +8,15 @@ export default function Talents() {
     >
       <div className="flex flex-col items-center justify-center h-full mt-10 md:mt-20">
         <div className="flex flex-col items-center text-center mt-8 mb-10">
-          <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-snug max-w-[500px] lg:max-w-xl xl:max-w-2xl">
+          <motion.h1
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-snug max-w-[500px] lg:max-w-xl xl:max-w-2xl"
+          >
             We provide innovative design solutions & expert talents
-          </h1>
+          </motion.h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#CACACA] font-medium mt-4 max-w-lg">
             From a small team of five people to a leading global remote team of

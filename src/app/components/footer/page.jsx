@@ -161,7 +161,7 @@ export default function Footer() {
           <div className=" text-center lg:text-left text-[#E8E8E8]">
             <h3 className="text-lg sm:text-xl font-bold">Office</h3>
             <p className="text-base sm:text-lg font-medium mt-2">
-              Ravi Block, Iqbal Town
+              641 Ravi Block, Iqbal Town
               <br />
               Lahore
             </p>

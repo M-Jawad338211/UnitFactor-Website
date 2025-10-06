@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Bookings() {
   return (
@@ -9,10 +10,16 @@ export default function Bookings() {
       >
         <div className="w-full h-auto space-y-6 flex flex-col justify-between">
           <div className="space-y-4 flex flex-col items-center">
-            <h2 className="text-xl md:text-2xl lg:text-5xl xl:text-5xl  text-center font-semibold leading-snug tracking-tight text-white">
+            <motion.h2
+              initial={{ opacity: 0, y: -40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-xl md:text-2xl lg:text-5xl xl:text-5xl  text-center font-semibold leading-snug tracking-tight text-white"
+            >
               Wondering if we’re your
               <br /> UI/UX design match?
-            </h2>
+            </motion.h2>
 
             <p className="font-normal text-base md:text-xl lg:text-2xl xl:text-3xl   leading-snug tracking-wide text-white max-w-[600px]">
               We offer you a free 3-day trial work with one of our experienced

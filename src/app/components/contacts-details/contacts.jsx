@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 export default function Contacts() {
   const strategies = [
     "Expect a response from us within an hour",
@@ -120,9 +121,15 @@ export default function Contacts() {
         </div>
 
         <div className="bg-[url('/form.png')] bg-cover bg-no-repeat bg-center rounded-2xl shadow-lg p-6 md:p-8 w-full lg:w-1/2">
-          <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-left font-bold mb-6">
+          <motion.h2
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-left font-bold mb-6"
+          >
             Tell us about your project
-          </h2>
+          </motion.h2>
           <form className="space-y-5">
             <div className="flex flex-col xl:flex-row gap-4">
               <input

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function PortfolioPartners() {
   return (
@@ -7,9 +7,15 @@ export default function PortfolioPartners() {
       <div className=" w-full p-6 md:p-10 mx-auto rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12  items-stretch mt-6 md:mt-10">
         <div className="w-full  flex flex-col">
           <div className=" flex flex-col gap-8 xl:gap-6 2xl:gap-13 items-center md:items-start w-full">
-            <h2 className="text-xl  md:text-2xl lg:text-3xl xl:text-5xl xl:pr-16  text-center md:text-left xl:text-center  text-white  font-bold leading-[142%] tracking-[0] max-w-xs xl:max-w-lg">
+            <motion.h2
+              initial={{ opacity: 0, y: -40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-xl  md:text-2xl lg:text-3xl xl:text-5xl xl:pr-16  text-center md:text-left xl:text-center  text-white  font-bold leading-[142%] tracking-[0] max-w-xs xl:max-w-lg"
+            >
               We transform Ideas into design Success Stories
-            </h2>
+            </motion.h2>
 
             <p className="bg-white rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-4xl font-bold">
               70+ Projects done
