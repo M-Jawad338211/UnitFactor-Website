@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 export default function Services() {
   const [activeCategory, setActiveCategory] = useState("Strategy");
 
@@ -130,9 +131,15 @@ export default function Services() {
   return (
     <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-12 md:py-20 xl:py-28 w-full h-full items-center justify-center text-center bg-[url('/animation-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-[#E8E8E8] text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal">
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-[#E8E8E8] text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal"
+        >
           Our Services
-        </h2>
+        </motion.h2>
         <p className="text-[#E8E8E8] text-base md:text-xl font-normal max-w-xl sm:max-w-3xl mt-4">
           We’ve helped many startups and companies design high-quality digital
           products, websites, platforms, and mobile apps that meet business

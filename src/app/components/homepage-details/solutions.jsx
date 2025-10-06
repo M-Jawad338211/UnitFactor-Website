@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function Solutions() {
   const services = [
     {
@@ -73,9 +74,15 @@ export default function Solutions() {
 
   return (
     <div className="flex flex-col px-4 sm:px-12 lg:px-16 xl:px-28 py-12 sm:py-20  lg:py-32 w-full h-full bg-[url('/Rectangle.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-      <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-left font-normal font-designer text-white mb-4">
+      <motion.h2
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-left font-normal font-designer text-white mb-4"
+      >
         OUR SOLUTION
-      </h2>
+      </motion.h2>
       <p className="text-base  md:text-lg lg:text-xl font-normal text-white text-left max-w-2xl sm:max-w-4xl lg:max-w-5xl md:leading-normal xl:leading-relaxed">
         We offer a wide range of digital services designed to elevate your
         business. From custom website development to complete IT solutions, our

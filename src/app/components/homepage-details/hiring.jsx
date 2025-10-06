@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function Hiring() {
   return (
     <div
@@ -23,10 +24,16 @@ export default function Hiring() {
         </div>
 
         <div className="flex flex-col items-center mt-6 sm:mt-8 mb-8 sm:mb-10">
-          <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white text-center max-w-sm sm:max-w-4xl leading-snug sm:leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white text-center max-w-sm sm:max-w-4xl leading-snug sm:leading-tight"
+          >
             Crafting Unique, Purpose-Driven Designs That Capture Attention,
             Build Trust, and Turn Visitors into Loyal Customers
-          </h1>
+          </motion.h1>
 
           <a
             href="contacts"

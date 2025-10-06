@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 export default function Projects() {
   const strategies = [
     "Flexible collaboration & fixed monthly rate",
@@ -13,10 +14,16 @@ export default function Projects() {
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] text-[#E8E8E8]">
           70+ Successful Projects
         </p>
-        <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight lg:leading-snug text-[#E8E8E8] mt-2">
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight lg:leading-snug text-[#E8E8E8] mt-2"
+        >
           Our custom approach leads <br className="hidden sm:block" />
           projects to success
-        </h2>
+        </motion.h2>
       </div>
 
       <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 items-stretch mt-16">
